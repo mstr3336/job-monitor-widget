@@ -1,0 +1,75 @@
+Job Id: 3988503.pbsserver
+    Job_Name = ga10T1seedw12100
+    Job_Owner = jwoo1545@hpc012
+    resources_used.cpupercent = 548
+    resources_used.cput = 00:35:40
+    resources_used.mem = 31652kb
+    resources_used.ncpus = 2
+    resources_used.vmem = 31652kb
+    resources_used.walltime = 00:18:27
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FSC-Nanorod-RW
+    Checkpoint = u
+    ctime = Sun Jan 19 18:16:15 2020
+    Error_Path = hpc012:/home/jwoo1545/janus/gcmc/window_run/10/Tb1-mu-015-seed
+	ed/ga10T1seedw12100.e3988503
+    exec_host = hpc012/7*2
+    exec_vnode = (hpc012:ncpus=2:mem=2097152kb)
+    group_list = RDS-FSC-Nanorod-RW
+    Hold_Types = n
+    Join_Path = n
+    Keep_Files = n
+    Mail_Points = a
+    Mail_Users = jwpbs@outlook.com
+    mtime = Sun Jan 19 18:34:42 2020
+    Output_Path = hpc012:/home/jwoo1545/janus/gcmc/window_run/10/Tb1-mu-015-see
+	ded/ga10T1seedw12100.o3988503
+    Priority = 0
+    qtime = Sun Jan 19 18:16:15 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 2048
+    Resource_List.max_ncpus_per_chunk = 2
+    Resource_List.meg_ram_per_core = 1024
+    Resource_List.mem = 2gb
+    Resource_List.mpiprocs = 2
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 2
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=2:mpiprocs=2:mem=2GB
+    Resource_List.sort_time = 1579418175
+    Resource_List.walltime = 04:00:00
+    stime = Sun Jan 19 18:16:16 2020
+    session_id = 44460
+    jobdir = /home/jwoo1545
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,min=12100,PBS_O_HOME=/home/jwoo1545,
+	PBS_O_HOST=hpc012,PBS_O_LOGNAME=jwoo1545,prefix=ga10T1seedw,
+	PBS_O_WORKDIR=/home/jwoo1545/janus/gcmc/window_run/10/Tb1-mu-015-seede
+	d,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/intel/composerxe//impi/5.0.2.044/intel64/bin:/us
+	r/local/tmux/2.7/bin:/usr/local/libevent/2.1.8/bin:/home/jwoo1545/minic
+	onda3/bin:/usr/local/python/3.7.2/bin:/usr/local/sqlite/3080802/bin:/us
+	r/local/zlib/1.2.8/bin:/usr/local/intel/composerxe/impi_5.0.2/intel64/b
+	in:/usr/local/intel/composerxe/composer_xe_2015/impi/mic/bin:/usr/local
+	/intel/composerxe/composer_xe_2015/mpirt/bin/intel64:/usr/local/intel/c
+	omposerxe/composer_xe_2015/bin:/usr/local/gcc/4.9.3/bin:/usr/lib64/qt-3
+	.3/bin:/usr/local/pbs/default/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sb
+	in:/sbin:/home/jwoo1545/bin:/opt/pbs/default/bin,PBS_O_QUEUE=defaultQ,
+	PBS_O_MAIL=/var/spool/mail/jwoo1545
+    comment = Job run at Sun Jan 19 at 18:16 on (hpc012:ncpus=2:mem=2097152kb)
+    etime = Sun Jan 19 18:16:15 2020
+    run_count = 1
+    Submit_arguments = -v min=12100,
+	prefix=ga10T1seedw -N ga10T1seedw12100 qsubchain.pbs
+    project = RDS-FSC-Nanorod-RW
+

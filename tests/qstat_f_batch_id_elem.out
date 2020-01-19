@@ -1,0 +1,74 @@
+Job Id: 3985089[5].pbsserver
+    Job_Name = Jv31p0.33P
+    Job_Owner = jwoo1545@login3.hpc.sydney.edu.au
+    resources_used.cpupercent = 195
+    resources_used.cput = 54:22:36
+    resources_used.mem = 41528kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 41528kb
+    resources_used.walltime = 54:26:01
+    job_state = R
+    queue = normal
+    server = pbsserver
+    Account_Name = RDS-FSC-Nanorod-RW
+    ctime = Fri Jan 17 12:09:43 2020
+    Error_Path = login3:/project/RDS-FSC-Nanorod-RW/jwoo1545/rods_DA/J_L2.29_Um
+	brella_Sampling/from_liq/rod_frac_0.086/v0.31/preequilibrated/NPT_end_c
+	orrectedp0.33/Parallels/U^array_index^/stderr
+    exec_host = hpc148/1
+    exec_vnode = (hpc148:ncpus=1:mem=1048576kb)
+    group_list = RDS-FSC-Nanorod-RW
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Users = jwpbs@outlook.com
+    mtime = Sun Jan 19 18:36:28 2020
+    Output_Path = login3:/project/RDS-FSC-Nanorod-RW/jwoo1545/rods_DA/J_L2.29_U
+	mbrella_Sampling/from_liq/rod_frac_0.086/v0.31/preequilibrated/NPT_end_
+	correctedp0.33/Parallels/U^array_index^/stdout
+    Priority = 0
+    qtime = Fri Jan 17 12:09:43 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 1024
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 1024
+    Resource_List.mem = 1gb
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = normal
+    Resource_List.select = 1:ncpus=1:mem=1GB
+    Resource_List.sort_time = 1579223383
+    Resource_List.walltime = 163:00:00
+    stime = Fri Jan 17 12:10:28 2020
+    session_id = 160917
+    Shell_Path_List = /bin/sh
+    jobdir = /home/jwoo1545
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_HOME=/home/jwoo1545,PBS_O_HOST=login3.hpc.sydney.edu.au,
+	PBS_O_LOGNAME=jwoo1545,
+	PBS_O_WORKDIR=/project/RDS-FSC-Nanorod-RW/jwoo1545/rods_DA/J_L2.29_Umb
+	rella_Sampling/from_liq/rod_frac_0.086/v0.31/preequilibrated/NPT_end_co
+	rrectedp0.33/Parallels,PBS_O_LANG=en_AU.UTF-8,PBS_O_QUEUE=defaultQ,
+	PBS_O_MAIL=/var/spool/mail/jwoo1545,
+	PBS_O_PATH=/home/jwoo1545/miniconda3/bin:/usr/local/pbs/default/bin:/u
+	sr/local/tmux/2.7/bin:/usr/local/libevent/2.1.8/bin:/home/jwoo1545/mini
+	conda3/bin:/usr/local/python/3.7.2/bin:/usr/local/sqlite/3080802/bin:/u
+	sr/local/zlib/1.2.8/bin:/usr/local/intel/composerxe/impi_5.0.2/intel64/
+	bin:/usr/local/intel/composerxe/composer_xe_2015/impi/mic/bin:/usr/loca
+	l/intel/composerxe/composer_xe_2015/mpirt/bin/intel64:/usr/local/intel/
+	composerxe/composer_xe_2015/bin:/usr/local/gcc/4.9.3/bin:/usr/lib64/qt-
+	3.3/bin:/usr/local/pbs/default/bin:/usr/local/bin:/bin:/usr/bin:/usr/lo
+	cal/sbin:/usr/sbin:/sbin:/home/jwoo1545/bin:/home/jwoo1545/bin
+    etime = Fri Jan 17 12:09:43 2020
+    run_count = 1
+    array_id = 3985089[].pbsserver
+    array_index = 5
+    project = RDS-FSC-Nanorod-RW
+
