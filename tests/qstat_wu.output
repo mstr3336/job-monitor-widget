@@ -1,0 +1,18 @@
+
+pbsserver: 
+                                                                                                   Req'd  Req'd   Elap
+Job ID                         Username        Queue           Jobname         SessID   NDS  TSK   Memory Time  S Time
+------------------------------ --------------- --------------- --------------- -------- ---- ----- ------ ----- - -----
+3963231[].pbsserver            jwoo1545        large           Jcrv31p0.3L          --     1     1    4gb 300:0 B  -- 
+3963232.pbsserver              jwoo1545        scavenger       TJcrv31p0.3L         --     1     1    4gb 00:01 H  -- 
+3963253[].pbsserver            jwoo1545        large           Jcrv32p0.2L          --     1     1    4gb 300:0 B  -- 
+3963254.pbsserver              jwoo1545        scavenger       TJcrv32p0.2L         --     1     1    4gb 00:01 H  -- 
+3984779[].pbsserver            jwoo1545        normal          Jcrv32p2d98          --     1     1    4gb 164:0 B  -- 
+3984780.pbsserver              jwoo1545        scavenger       TJcrv32p2d98         --     1     1    4gb 00:01 H  -- 
+3984813[].pbsserver            jwoo1545        normal          Jv32p22d98           --     1     1    4gb 164:0 B  -- 
+3984814.pbsserver              jwoo1545        scavenger       TJv32p22d98          --     1     1    4gb 00:01 H  -- 
+3984889[].pbsserver            jwoo1545        normal          Jc32p23d98           --     1     1    4gb 164:0 B  -- 
+3984890.pbsserver              jwoo1545        scavenger       TJc32p23d98          --     1     1    4gb 00:01 H  -- 
+3985089[].pbsserver            jwoo1545        normal          Jv31p0.33P           --     1     1    1gb 163:0 B  -- 
+3985090.pbsserver              jwoo1545        scavenger       TJv31p0.33P          --     1     1    4gb 00:01 H  -- 
+3988465.pbsserver              jwoo1545        small           ga10T1seedw1204    64478    1     2    2gb 04:00 R 00:43:16
