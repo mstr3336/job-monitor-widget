@@ -34,3 +34,11 @@ sed -re '1,/[-\s]+$/ d;s/ .*//' tests/qstat_wu.output |& jq -nR '[inputs | selec
 
 ```
 
+
+Getting values from a single `qstat -f job_id` call:
+
+```bash
+cat tests/qstat_f_batch_id_elem.out |& \
+  jq -R 'match("(?<resource_list>Resource_List)\\.(?<resource_type>\\S*)\\s*=\\s*(?<resource_val>.*)", "ig")'
+
+```
