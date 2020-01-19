@@ -39,6 +39,17 @@ Getting values from a single `qstat -f job_id` call:
 
 ```bash
 cat tests/qstat_f_batch_id_elem.out |& \
-  jq -R 'match("(?<resource_list>Resource_List)\\.(?<resource_type>\\S*)\\s*=\\s*(?<resource_val>.*)", "ig")'
+  jq -R 'match("(?<list_type>Resource_List)\\.(?<resource_type>\\S*)\\s*=\\s*(?<resource_val>.*)", "ig")'
+
+```
+
+
+
+```bash
+
+cat tests/qstat_f_batch_id_elem.out |& jq -R 'match("(?<list_type>Resource_List|resources_used)\\.(?<resource_type>\\S*)\\s*=\\s*(?<resource_val>.*)", "ig") |\
+ {(.captures | .[] | select(.name == "list_type").string) : \
+   {(.captures | .[] | select(.name == "resource_type").string) : \
+       .captures | .[] | select(.name == "resource_val").string}}' 
 
 ```
