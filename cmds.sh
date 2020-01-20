@@ -30,9 +30,15 @@ function get_job_info() {
 }
 
 function make_json_dict() {
-        local input=$1; if [ "$input" == "-" ]; then read input; fi
-        
-	echo "$input" |& \
+        local line=""
+        local input=$1; if [ "$input" == "-" ]; then 
+		input=""
+		while read line; do
+			input="${input}\n${line}"	
+		done	
+        fi
+
+	echo -e "$input" |& \
 	  sed -Ee 's/^(.+)\s+=\s*(.+)/"\1":"\2",/g;
 	           1s;^;{\n;
 		   $s/,$/\n}\n/'
@@ -41,12 +47,19 @@ function make_json_dict() {
 
 
 function get_sublist() {
-        local string=$1; if [ "$string" == "-" ]; then read string; fi
+        local line=""
+        local input=$1; if [ "$input" == "-" ]; then 
+		input=""
+		while read line; do
+			input="${input}\n${line}"	
+		done	
+        fi
+        
         local prefix="$2"
-	
-	echo "$string" |& \
-	  sed -nEe '/$prefix/p' |& \
+
+	echo -e "$input" |& \
+	  sed -nEe "/${prefix}/p" |& \
 	  sed -Ee  's/^.*\.//'  |& \
-	  make_json_dict
+	  make_json_dict -
 
 }
