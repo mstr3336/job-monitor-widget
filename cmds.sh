@@ -14,3 +14,15 @@ function get_job_ids() {
 	  jq -nR '[inputs | select(length>0)]' 
 
 }
+
+
+function get_job_info(job_id) {
+	raw_output="$(qstat -f $job_id)"
+
+	useful_keys="Resource_List|resources_used|Job_Name|job_state|array"
+
+	filtered_output=echo $raw_output |& \
+	  grep -ie $useful_keys 
+
+	echo $filtered_output
+}
