@@ -9,10 +9,12 @@ function get_job_ids() {
 
     # jq json-ifies the output
 
-
-	sed -Ee '1,/[-\s]+$/ d;s/ .*//' $(qstat -wu $USER) |& \
-	  jq -nR '[inputs | select(length>0)]' 
-
+	echo "$(qstat -wu $USER)" |& \
+		sed -Ee '1,/[-\s]+$/ d;s/ .*//' |& \
+	 	#jq -nR '[inputs | select(length>0)]' 
+	       	sed -Ee 's/(.*)/"\1",/g;
+		         1s;^;[\n;
+		         $s/,$/\n]\n/'
 }
 
 
