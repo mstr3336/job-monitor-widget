@@ -53,11 +53,13 @@ function updateJoblist(result, previousState) {
 		var job_status = run('ssh ' + info.username + '@' + info.server + ' ' + cmds.job_info + ' ' + job);
 
 		
-		job_status
-			.then((status) => {console.warn(status)});
-			//.then((status) => updateState({type : 'JOB_STATUS_FETCHED', output : { job_id : job, status }}), previousState);
+		var j_resolved = Promise.resolve(job_status);
+			//.then((status) => { previousState = updateJobStatus({ job_id : job, status }, previousState);}); 
 
-		console.info(job_status);
+		console.warn(j_resolved);
+		result = { job_id : job, status : j_resolved.result };
+		console.info(result);
+		previousState = updateJobStatus(result, previousState);
 
 	}
 
@@ -65,10 +67,13 @@ function updateJoblist(result, previousState) {
 }
 
 function updateJobStatus(result, previousState) {
-	result.status = JSON.parse(result.status);
 	console.warn(result);
+	//result.status = JSON.parse(result.status);
+	
 
-	previousState.jobStatuses[result.job_id] = result.status;
+	if (previousState['jobStatuses'] === "undefined") previousState["jobStatuses"] = {};
+
+	previousState['jobStatuses'][result.job_id] = result.status;
 	return previousState;
 }
 
@@ -76,7 +81,7 @@ export const updateState = (event, previousState) => {
 		console.warn(event);
 		switch(event.type) {
 			case 'JOBLIST_FETCHED' : return updateJoblist(event.output, previousState);
-			case 'JOB_STATUS_FETCHED' : return updateJobStatus(event.output, previousState);
+			//case 'JOB_STATUS_FETCHED' : return updateJobStatus(event.output, previousState);
 			default : return previousState;
 		}
 }
