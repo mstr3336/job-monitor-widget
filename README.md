@@ -5,13 +5,20 @@ Extract job_ids from `qstat -wu $USER`:
 
 
 ```bash
-sed -re '1,/[-\s]+$/ d;s/ .*//' $(qstat -wu $USER)
+sed -Ee '1,/[-\s]+$/ d;s/ .*//' $(qstat -wu $USER)
 ```
+
+Or:
+
+```bash
+sed -Ee '1,/[-\s]+$/ d;s/ .*//' ./tests/qstat_wu.output
+```
+
 
 Parse these into json (Requires jq loaded on server, consider loading with module load jq if avail)
 
 ```bash
-sed -re '1,/[-\s]+$/ d;s/ .*//' tests/qstat_wu.output |& jq -nR '[inputs | select(length>0)]' 
+sed -Ee '1,/[-\s]+$/ d;s/ .*//' tests/qstat_wu.output |& jq -nR '[inputs | select(length>0)]' 
 
 ```
 
