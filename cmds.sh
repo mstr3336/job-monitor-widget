@@ -16,10 +16,11 @@ function get_job_ids() {
 }
 
 
-function get_job_info(job_id) {
-	raw_output="$(qstat -f $job_id)"
+function get_job_info() {
+	local job_id=$1
+	local raw_output="$(qstat -f $job_id)"
 
-	useful_keys="Resource_List|resources_used|Job_Name|job_state|array"
+	local useful_keys="Resource_List|resources_used|Job_Name|job_state|array"
 
 	filtered_output=echo $raw_output |& \
 	  grep -ie $useful_keys 
