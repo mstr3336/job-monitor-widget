@@ -22,9 +22,9 @@ function get_job_info() {
 	local job_id=$1
 	local raw_output="$(qstat -f $job_id)"
          
-	local useful_keys="Job_Name|job_state|array"
+	local useful_keys="(Job_Name|job_state|array)"
 
-	local filtered_output=$(echo "$raw_output" |& grep -iE "$useful_keys")
+	local filtered_output=$(echo "$raw_output" |& grep -iE "^\s*$useful_keys")
 	
 	local general_info=$(echo "$filtered_output" |& make_json_dict -)
 
