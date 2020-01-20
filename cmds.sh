@@ -1,7 +1,5 @@
 #!/bin/bash
 
-module load jq
-
 # Intended to run serverside
 function get_job_ids() {
     # Remove Everything before a line of only --- and whitespace
