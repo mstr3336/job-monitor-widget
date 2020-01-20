@@ -53,7 +53,7 @@ function make_json_dict() {
 	echo -e "$input" |& \
 	  sed -Ee 's/^(.+)\s+=\s*(.+)/"\1":"\2",/g;
 	           1s;^;{\n;
-		   $s/,$/\n}\n/'
+		   $s/(,\s*)?$/\n}\n/'
 
 }
 
