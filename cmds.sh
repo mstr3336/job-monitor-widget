@@ -22,13 +22,23 @@ function get_job_info() {
 	local job_id=$1
 	local raw_output="$(qstat -f $job_id)"
          
-	#echo "$raw_output"
-	local useful_keys="Resource_List|resources_used|Job_Name|job_state|array"
+	local useful_keys="Job_Name|job_state|array"
 
 	local filtered_output=$(echo "$raw_output" |& grep -iE "$useful_keys")
-	echo "$filtered_output"
+	
+	local general_info=$(echo "$filtered_output" |& make_json_dict -)
 
-	local resource_list=$(echo "$raw_output" |& sed -eE '/Resource_List/p')
+	local resource_list=$(echo "$raw_output" |& get_sublist - 'Resource_List')
+	local resource_used=$(echo "$raw_output" |& get_sublist - 'resources_used')
+
+	echo $(cat <<-EOF
+	{
+		"info"          : $general_info,
+		"resource_list" : $resource_list,
+		"resource_used" : $resource_used
+	}
+	EOF
+	);
 }
 
 function make_json_dict() {
