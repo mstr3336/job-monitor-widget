@@ -86,6 +86,8 @@ function separate_joblists() {
         local array=()
         local str="$input"
 
+        echo "$str"
+
 		while [[ $str =~ (?!Job Id:)(Job Id:|$) ]]; do
 		    array+=("${BASH_REMATCH[1]}")   # capture the field
 		    i=${#BASH_REMATCH}              # length of field + delimiter
@@ -93,4 +95,22 @@ function separate_joblists() {
 		done                                # the loop deletes $str, so make a copy if needed
 		
 		declare -p array        
+}
+
+function separate_joblists_2() {
+        local line=""
+        local input=$1; if [ "$input" == "-" ]; then 
+		input=""
+		while read line; do
+			input="${input}\n${line}"	
+		done	
+        fi
+
+        local array=()
+        local str="$input"
+
+		while read -r -d $'\0' each; do   # use a NUL terminated field separator 
+		    array+=("$each")
+		done < <(printf "%s" "$str" | awk '{ gsub(/Job Id:/,"\0"); print }')
+		declare -p array 
 }
