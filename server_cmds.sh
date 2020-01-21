@@ -111,6 +111,6 @@ function separate_joblists_2() {
 
 		while read -r -d $'\0' each; do   # use a NUL terminated field separator 
 		    array+=("$each")
-		done < <(printf "%s" "$str" | awk '{ gsub(/Job Id:/,"\0"); print }')
+		done < <(printf "%s" "$str" | awk '{ gsub(/Job Id:/,"\0"job_id = ); print }')
 		declare -p array 
 }
