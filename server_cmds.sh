@@ -117,9 +117,11 @@ function separate_joblists_2() {
 	
 
 	for job in "${array[@]}"; do
-		echo -e "job_id=$job" #|& \
+		if [[ $job = *[$' \t\n']*  ]]; then
+			echo -e "job_id=$job" #|& \
 		  #get_job_info
-		echo -e "\n\n\n"
+			echo -e "\n\n\n"
+		fi
 	done
 	
 	#echo -e "$str"	
