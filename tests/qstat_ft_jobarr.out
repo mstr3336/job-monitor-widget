@@ -1,0 +1,3411 @@
+Job Id: 3994477[].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    job_state = B
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    Checkpoint = u
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    group_list = RDS-FHS-STEMI-RW
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = ae
+    mtime = Tue Jan 21 19:24:29 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    substate = 70
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_MAIL=/var/spool/mail/mstr3336,PBS_O_QUEUE=defaultQ,
+	PBS_O_HOST=hpc005
+    comment = Job Array Began at Tue Jan 21 at 19:24
+    etime = Tue Jan 21 19:24:29 2020
+    array = True
+    array_state_count = Queued:0 Running:50 Exiting:0 Expired:0 
+    array_indices_submitted = 1-50
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[1].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 64
+    resources_used.cput = 00:00:23
+    resources_used.mem = 307924kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 307924kb
+    resources_used.walltime = 00:04:20
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc202/3
+    exec_vnode = (hpc202:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:39 2020
+    session_id = 13115
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 1
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[2].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 17
+    resources_used.cput = 00:00:04
+    resources_used.mem = 279768kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 279768kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc006/3
+    exec_vnode = (hpc006:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:50 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:39 2020
+    session_id = 155095
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 2
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[3].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 17
+    resources_used.cput = 00:00:04
+    resources_used.mem = 280472kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 280472kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc006/5
+    exec_vnode = (hpc006:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:50 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:40 2020
+    session_id = 155121
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 3
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[4].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 100
+    resources_used.cput = 00:00:05
+    resources_used.mem = 305224kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 305224kb
+    resources_used.walltime = 00:04:15
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/3
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:40 2020
+    session_id = 101472
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 4
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[5].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 100
+    resources_used.cput = 00:00:05
+    resources_used.mem = 280224kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 280224kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/4
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:40 2020
+    session_id = 101496
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 5
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[6].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 100
+    resources_used.cput = 00:00:04
+    resources_used.mem = 280128kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 280128kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/5
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:40 2020
+    session_id = 101522
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 6
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[7].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 100
+    resources_used.cput = 00:00:05
+    resources_used.mem = 315332kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 315332kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/6
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:41 2020
+    session_id = 101550
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 7
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[8].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 10
+    resources_used.cput = 00:00:04
+    resources_used.mem = 279128kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 279128kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/7
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:41 2020
+    session_id = 101676
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 8
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[9].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 22
+    resources_used.cput = 00:00:04
+    resources_used.mem = 288764kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 288764kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/8
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:42 2020
+    session_id = 101880
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 9
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[10].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 20
+    resources_used.cput = 00:00:04
+    resources_used.mem = 279020kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 279020kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/9
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:42 2020
+    session_id = 101917
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 10
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[11].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 20
+    resources_used.cput = 00:00:05
+    resources_used.mem = 279036kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 279036kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc215/10
+    exec_vnode = (hpc215:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:54 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:42 2020
+    session_id = 101953
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 11
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[12].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 93388kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 93388kb
+    resources_used.walltime = 00:04:15
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/1
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:42 2020
+    session_id = 131496
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 12
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[13].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 90904kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 90904kb
+    resources_used.walltime = 00:04:15
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/2
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:43 2020
+    session_id = 131522
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 13
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[14].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 89272kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 89272kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/3
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:43 2020
+    session_id = 131550
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 14
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[15].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 87748kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 87748kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/4
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:43 2020
+    session_id = 131580
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 15
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[16].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 87620kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 87620kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/5
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:44 2020
+    session_id = 131693
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 16
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[17].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 87636kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 87636kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/6
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:44 2020
+    session_id = 131727
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 17
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[18].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 87832kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 87832kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/7
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:44 2020
+    session_id = 131771
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 18
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[19].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 87724kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 87724kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/8
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:45 2020
+    session_id = 131831
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 19
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[20].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 87680kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 87680kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/10
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:45 2020
+    session_id = 131915
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 20
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[21].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 88120kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 88120kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/13
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:45 2020
+    session_id = 131957
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 21
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[22].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 2
+    resources_used.cput = 00:00:01
+    resources_used.mem = 87752kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 87752kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc214/14
+    exec_vnode = (hpc214:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:28:57 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:46 2020
+    session_id = 132023
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 22
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[23].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14228kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14228kb
+    resources_used.walltime = 00:04:17
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/0
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:46 2020
+    session_id = 121929
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 23
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[24].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14276kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14276kb
+    resources_used.walltime = 00:04:17
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/6
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:46 2020
+    session_id = 121958
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 24
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[25].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14296kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14296kb
+    resources_used.walltime = 00:04:16
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/7
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:46 2020
+    session_id = 121988
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 25
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[26].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14292kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14292kb
+    resources_used.walltime = 00:04:16
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/8
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:47 2020
+    session_id = 122020
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 26
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[27].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14304kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14304kb
+    resources_used.walltime = 00:04:15
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/9
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:47 2020
+    session_id = 122094
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 27
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[28].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14312kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14312kb
+    resources_used.walltime = 00:04:15
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/10
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:47 2020
+    session_id = 122178
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 28
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[29].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14320kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14320kb
+    resources_used.walltime = 00:04:15
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/11
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:47 2020
+    session_id = 122239
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 29
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[30].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14328kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14328kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/12
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:48 2020
+    session_id = 122301
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 30
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[31].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14320kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14320kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/13
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:48 2020
+    session_id = 122343
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 31
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[32].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14312kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14312kb
+    resources_used.walltime = 00:04:14
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/14
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:49 2020
+    session_id = 122431
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 32
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[33].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14316kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14316kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/15
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:49 2020
+    session_id = 122499
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 33
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[34].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14304kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14304kb
+    resources_used.walltime = 00:04:13
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/16
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:50 2020
+    session_id = 122547
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 34
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[35].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14320kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14320kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/17
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:50 2020
+    session_id = 122663
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 35
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[36].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14320kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14320kb
+    resources_used.walltime = 00:04:12
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/18
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:51 2020
+    session_id = 122715
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 36
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[37].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14316kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14316kb
+    resources_used.walltime = 00:04:11
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/19
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:51 2020
+    session_id = 122769
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 37
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[38].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 14316kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 14316kb
+    resources_used.walltime = 00:04:11
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc201/20
+    exec_vnode = (hpc201:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:02 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:52 2020
+    session_id = 123281
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 38
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[39].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37896kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37896kb
+    resources_used.walltime = 00:04:19
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/0
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:52 2020
+    session_id = 85133
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 39
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[40].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37928kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37928kb
+    resources_used.walltime = 00:04:19
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/2
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:52 2020
+    session_id = 85158
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 40
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[41].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37908kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37908kb
+    resources_used.walltime = 00:04:19
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/3
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:52 2020
+    session_id = 85184
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 41
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[42].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 38940kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 38940kb
+    resources_used.walltime = 00:04:19
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/4
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:53 2020
+    session_id = 85212
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 42
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[43].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37920kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37920kb
+    resources_used.walltime = 00:04:18
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/5
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:53 2020
+    session_id = 85322
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 43
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[44].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37840kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37840kb
+    resources_used.walltime = 00:04:18
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/6
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:53 2020
+    session_id = 85354
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 44
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[45].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37844kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37844kb
+    resources_used.walltime = 00:04:18
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/8
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:53 2020
+    session_id = 85397
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 45
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[46].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37836kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37836kb
+    resources_used.walltime = 00:04:18
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/9
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:54 2020
+    session_id = 85455
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 46
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[47].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37864kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37864kb
+    resources_used.walltime = 00:04:17
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/10
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:54 2020
+    session_id = 85537
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 47
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[48].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37848kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37848kb
+    resources_used.walltime = 00:04:17
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/11
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:54 2020
+    session_id = 85599
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 48
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[49].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 14
+    resources_used.cput = 00:00:01
+    resources_used.mem = 41780kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 41780kb
+    resources_used.walltime = 00:04:17
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/13
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:55 2020
+    session_id = 85663
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 49
+    project = RDS-FHS-STEMI-RW
+
+Job Id: 3994477[50].pbsserver
+    Job_Name = cmq6916
+    Job_Owner = mstr3336@hpc005
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:01
+    resources_used.mem = 37836kb
+    resources_used.ncpus = 1
+    resources_used.vmem = 37836kb
+    resources_used.walltime = 00:04:16
+    job_state = R
+    queue = small
+    server = pbsserver
+    Account_Name = RDS-FHS-STEMI-RW
+    ctime = Tue Jan 21 19:24:29 2020
+    Error_Path = hpc005:/home/mstr3336/software/SPEED-EXTRACT.pipeline/cmq6916.
+	e3994477.^array_index^
+    exec_host = hpc007/14
+    exec_vnode = (hpc007:ncpus=1:mem=4194304kb)
+    group_list = RDS-FHS-STEMI-RW
+    Join_Path = oe
+    Keep_Files = n
+    mtime = Tue Jan 21 19:29:11 2020
+    Output_Path = hpc005:/project/STEMI/workflows/21_03_2019_3m/logs/cmq_worker
+	.^array_index^.log
+    Priority = 0
+    qtime = Tue Jan 21 19:24:29 2020
+    Rerunable = True
+    Resource_List.cr_mdcs_tok = 0
+    Resource_List.fs_factor = 10
+    Resource_List.is_highmem = false
+    Resource_List.is_interactive = false
+    Resource_List.max_meg_ram_per_chunk = 4096
+    Resource_List.max_ncpus_per_chunk = 1
+    Resource_List.meg_ram_per_core = 4096
+    Resource_List.mem = 4gb
+    Resource_List.mpiprocs = 1
+    Resource_List.nchunks = 1
+    Resource_List.ncpus = 1
+    Resource_List.ngpus = 0
+    Resource_List.nodect = 1
+    Resource_List.place = free
+    Resource_List.reporting_queue = small
+    Resource_List.select = 1:ncpus=1:mpiprocs=1:mem=4gb
+    Resource_List.sort_time = 1579595069
+    Resource_List.walltime = 23:59:59
+    stime = Tue Jan 21 19:24:55 2020
+    session_id = 85729
+    jobdir = /home/mstr3336
+    substate = 42
+    Variable_List = PBS_O_SYSTEM=Linux,PBS_O_SHELL=/bin/bash,
+	PBS_O_TZ=Australia/Sydney,PBS_O_HOME=/home/mstr3336,PBS_O_HOST=hpc005,
+	PBS_O_LOGNAME=mstr3336,
+	PBS_O_WORKDIR=/home/mstr3336/software/SPEED-EXTRACT.pipeline,
+	PBS_O_LANG=en_US.UTF-8,
+	PBS_O_PATH=/usr/local/zeromq/4.1.3/bin:/usr/local/R/3.6.1/bin:/usr/loc
+	al/mysql/5.7.1/bin:/usr/local/libcurl/7.40.0/bin:/usr/local/gdal/3.0.1/
+	bin:/usr/local/gcc/4.9.3/bin:/usr/local/geos/3.8.0/bin:/usr/local/jags/
+	4.2.0/bin:/usr/local/sqlite/3260000/bin:/usr/local/proj/6.2.0/bin:/usr/
+	local/udunits/2.2.20/bin:/usr/lib64/qt-3.3/bin:/usr/local/pbs/default/b
+	in:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/mstr3336/bin,
+	PBS_O_QUEUE=defaultQ,PBS_O_MAIL=/var/spool/mail/mstr3336
+    etime = Tue Jan 21 19:24:29 2020
+    run_count = 1
+    array_id = 3994477[].pbsserver
+    array_index = 50
+    project = RDS-FHS-STEMI-RW
+
