@@ -7,8 +7,8 @@ function get_job_ids() {
 
     # jq json-ifies the output
 
-	echo "$(qstat -wu $USER)" | \
-		sed -Ee '1,/[-\s]+$/ d;s/ .*//' | \
+	echo "$(qstat -wu $USER)" |& \
+		sed -Ee '1,/[-\s]+$/ d;s/ .*//' |& \
 	 	#jq -nR '[inputs | select(length>0)]' 
 	       	sed -Ee 's/(.*)/"\1",/g;
 		         1s;^;[\n;
@@ -22,12 +22,12 @@ function get_job_info() {
          
 	local useful_keys="(Job_Name|job_state|array|job_id)"
 
-	local filtered_output=$(echo "$raw_output" | grep -iE "^\s*$useful_keys")
+	local filtered_output=$(echo "$raw_output" |& grep -iE "^\s*$useful_keys")
 	
-	local general_info=$(echo "$filtered_output" | make_json_dict -)
+	local general_info=$(echo "$filtered_output" |& make_json_dict -)
 
-	local resource_list=$(echo "$raw_output" | get_sublist - 'Resource_List')
-	local resource_used=$(echo "$raw_output" | get_sublist - 'resources_used')
+	local resource_list=$(echo "$raw_output" |& get_sublist - 'Resource_List')
+	local resource_used=$(echo "$raw_output" |& get_sublist - 'resources_used')
 
 	echo $(cat <<-EOF
 	{
@@ -48,7 +48,7 @@ function make_json_dict() {
 		done	
         fi
 
-	echo -e "$input" | \
+	echo -e "$input" |& \
 	  sed -Ee 's/^(.+)\s+=\s*(.+)/"\1":"\2",/g;
 	           1s;^;{\n;
 		   $s/(,\s*)?$/\n}\n/'
@@ -67,9 +67,9 @@ function get_sublist() {
         
         local prefix="$2"
 
-	echo -e "$input" | \
-	  sed -nEe "/${prefix}/p" | \
-	  sed -Ee  's/^.*\.//'  | \
+	echo -e "$input" |& \
+	  sed -nEe "/${prefix}/p" |& \
+	  sed -Ee  's/^.*\.//'  |& \
 	  make_json_dict -
 
 }
