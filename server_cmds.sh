@@ -109,14 +109,14 @@ function separate_joblists_2() {
         local array=()
         local str="$input"
 
-		while read -r -d $'\0' each; do   # use a NUL terminated field separator 
-		    array+=("$each")
-		done < <(printf "%s" "$str" | awk '{ gsub(/Job Id:/,"\0"); print }')
+	while read -r -d $'\0' each; do   # use a NUL terminated field separator 
+	    array+=("$each")
+	done < <(printf "%s" "$str" | awk '{ gsub(/Job Id/,"\0"); print }')
 		
-		#declare -p array 
+	#declare -p array 
 
-		for job in "${array[@]}"; do
-			echo "job_id=$job" | \
-			  get_job_info
-		done
+	for job in "${array[@]}"; do
+		echo "job_id=$job" |& \
+		  get_job_info
+	done
 }
