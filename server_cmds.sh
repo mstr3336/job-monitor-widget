@@ -73,3 +73,24 @@ function get_sublist() {
 	  make_json_dict -
 
 }
+
+function separate_joblists() {
+        local line=""
+        local input=$1; if [ "$input" == "-" ]; then 
+		input=""
+		while read line; do
+			input="${input}\n${line}"	
+		done	
+        fi
+
+        local array=()
+        local str="$input"
+
+		while [[ $str =~ (?!Job Id:)(Job Id:|$) ]]; do
+		    array+=("${BASH_REMATCH[1]}")   # capture the field
+		    i=${#BASH_REMATCH}              # length of field + delimiter
+		    str=${str:i}                    # advance the string by that length
+		done                                # the loop deletes $str, so make a copy if needed
+		
+		declare -p array        
+}
