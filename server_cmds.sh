@@ -20,7 +20,7 @@ function get_job_info() {
 	local job_id=$1
 	local raw_output="$(qstat -f $job_id)"
          
-	local useful_keys="(Job_Name|job_state|array)"
+	local useful_keys="(Job_Name|job_state|array|job_id)"
 
 	local filtered_output=$(echo "$raw_output" |& grep -iE "^\s*$useful_keys")
 	
@@ -112,5 +112,11 @@ function separate_joblists_2() {
 		while read -r -d $'\0' each; do   # use a NUL terminated field separator 
 		    array+=("$each")
 		done < <(printf "%s" "$str" | awk '{ gsub(/Job Id:/,"\0"job_id = ); print }')
-		declare -p array 
+		
+		#declare -p array 
+
+		for job in "${array[@]}"; do
+			echo "$job" |& \
+			  get_job_info
+		done
 }
