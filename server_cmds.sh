@@ -8,13 +8,22 @@ function get_job_ids() {
     # jq json-ifies the output
 
 	echo "$(qstat -wu $USER)" |& \
-		sed -Ee '1,/[-\s]+$/ d;s/ .*//' |& \
-	 	#jq -nR '[inputs | select(length>0)]' 
+		sed -Ee '1,/[-\s]+$/ d;s/ .*//' 
+	 	 
+}
+function get_job_ids_json() {
+	get_job_ids |& \
 	       	sed -Ee 's/(.*)/"\1",/g;
 		         1s;^;[\n;
 		         $s/,$/\n]\n/'
+	
 }
 
+function get_all_jobs_raw() {
+	local job_ids=$(get_job_ids)
+
+	qstat -ft ${job_ids}
+}
 
 function get_job_info() {
 	local job_id=$1
@@ -118,8 +127,8 @@ function separate_joblists_2() {
 
 	for job in "${array[@]}"; do
 		if [[ $job = *[$' \t\n']*  ]]; then
-			echo -e "job_id=$job" #|& \
-		  #get_job_info
+			echo -e "job_id=$job" |& \
+		  		get_job_info
 			echo -e "\n\n\n"
 		fi
 	done
