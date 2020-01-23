@@ -24,8 +24,7 @@ const info = {
 }
 
 const cmds = {
-	'query_all' : 'get_job_ids',
-	'job_info'  : 'get_job_info'
+	'query_all' : 'fetch_jobs_json.sh'
 }
 
 
@@ -34,13 +33,12 @@ export const refreshFrequency = 1000*30;
 
 export const command = (dispatch) => {
 	run('ssh ' + info.username + '@' + info.server + ' ' + cmds.query_all)
-		.then((output) => dispatch({ type: 'JOBLIST_FETCHED', output}));
+		.then((output) => dispatch({ type: 'JOBS_FETCHED', output}));
 
 }
 
 export const inititalState = { 
-	jobList : [], 
-	jobStatuses : {}
+	jobList : []
 };
 
 function updateJoblist(result, previousState) {
@@ -48,37 +46,11 @@ function updateJoblist(result, previousState) {
 
 	previousState['jobList'] = data;
 
-	for (let job of data ) {
-		console.info("Fetching data for " + job);
-		var job_status = run('ssh ' + info.username + '@' + info.server + ' ' + cmds.job_info + ' ' + job);
-
-		
-		var j_resolved = Promise.resolve(job_status);
-			//.then((status) => { previousState = updateJobStatus({ job_id : job, status }, previousState);}); 
-
-		console.warn(j_resolved);
-		result = { job_id : job, status : j_resolved.result };
-		console.info(result);
-		previousState = updateJobStatus(result, previousState);
-
-	}
-
-	return previousState;
-}
-
-function updateJobStatus(result, previousState) {
-	console.warn(result);
-	//result.status = JSON.parse(result.status);
-	
-
-	if (previousState['jobStatuses'] === "undefined") previousState["jobStatuses"] = {};
-
-	previousState['jobStatuses'][result.job_id] = result.status;
 	return previousState;
 }
 
 export const updateState = (event, previousState) => {
-		console.warn(event);
+		console.debug(event);
 		switch(event.type) {
 			case 'JOBLIST_FETCHED' : return updateJoblist(event.output, previousState);
 			//case 'JOB_STATUS_FETCHED' : return updateJobStatus(event.output, previousState);
