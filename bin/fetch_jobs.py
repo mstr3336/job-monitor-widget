@@ -72,7 +72,7 @@ def get_all_job_stats():
 	for i, job in enumerate(jobs):
 		jobs[i] = job_to_dict(job)
 	
-	jobs = [job for job in jobs if job]
+	jobs = [job for job in jobs if job and job["job_id"]]
 
 	return jobs
 
