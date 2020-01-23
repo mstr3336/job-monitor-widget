@@ -19,7 +19,8 @@
 import { css , run, React } from 'uebersicht'
 //import DataTable from 'react-data-table-component';
 //import SmartDataTable from 'react-smart-data-table'
-
+//var bytes = require('./node_modules/bytes');
+import bytes from 'bytes'
 
 const info = {
 	'username' 	: 'mstr3336',
@@ -47,7 +48,18 @@ export const inititalState = {
 function updateJoblist(result, previousState) {
 	let data = JSON.parse(result);
 
-	previousState['jobList'] = data;
+	previousState['jobList'] = data.map((job, i) => {
+		['resources_used', 'Resource_List']
+		  .forEach(str => {
+			console.debug(str);
+			job[str].mem = bytes.parse(job[str].mem);
+			job[str].mem /= 1024*1024;
+			job[str].mem = Math.round(job[str].mem);
+		});
+
+		job.mem_pct = Math.round(100 * job.resources_used.mem / job.Resource_List.mem);
+		return job;
+	});
 
 	return previousState;
 }
