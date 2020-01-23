@@ -51,13 +51,22 @@ function updateJoblist(result, previousState) {
 	previousState['jobList'] = data.map((job, i) => {
 		['resources_used', 'Resource_List']
 		  .forEach(str => {
-			console.debug(str);
+		  	const epoch = '1970-01-01T';
+
 			job[str].mem = bytes.parse(job[str].mem);
 			job[str].mem /= 1024*1024;
 			job[str].mem = Math.round(job[str].mem);
+
+			job[str].time = new Date(epoch + job[str].walltime + 'Z');
 		});
 
-		job.mem_pct = Math.round(100 * job.resources_used.mem / job.Resource_List.mem);
+		job.pct = {};
+
+		['mem', 'time'].forEach((str => {
+			job.pct[str] = Math.round(100*job.resources_used[str] / job.Resource_List[str]);
+		}));
+
+
 		return job;
 	});
 
