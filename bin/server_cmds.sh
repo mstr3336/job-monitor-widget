@@ -16,7 +16,9 @@ function get_job_ids() {
 
 function get_all_jobs_raw() {
 	local job_ids=$(get_job_ids)
-
-	qstat -ft ${job_ids}
+	
+	if [[ $job_ids = *[![:space:]]* ]]; then
+		qstat -ft ${job_ids}
+	fi
 }
 
