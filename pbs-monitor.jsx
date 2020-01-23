@@ -16,7 +16,10 @@
  * Import the CSS function to render CSS styles.
  * @type {Function}
  */
-import { css , run } from 'uebersicht'
+import { css , run, React } from 'uebersicht'
+//import DataTable from 'react-data-table-component';
+//import SmartDataTable from 'react-smart-data-table'
+
 
 const info = {
 	'username' 	: 'mstr3336',
@@ -50,21 +53,62 @@ function updateJoblist(result, previousState) {
 }
 
 export const updateState = (event, previousState) => {
-		console.debug(event);
+		
 		switch(event.type) {
-			case 'JOBLIST_FETCHED' : return updateJoblist(event.output, previousState);
-			//case 'JOB_STATUS_FETCHED' : return updateJobStatus(event.output, previousState);
+			case 'JOBS_FETCHED' : return updateJoblist(event.output, previousState);
 			default : return previousState;
 		}
 }
 
+const headers = {
+	'job_id': {
+		text: 'Job Id'
+	},
+	'Job_Name': {
+		text: 'Job Name'
+	},
+	'job_state': {
+		text: 'Job State'
+	},
+	'resources_used.mem': {
+		text: 'Memory Used',
+	},
+	'resources_used.walltime': {
+		text: 'Time used'
+	}
+}
+
+
 export const render = ( state ) => {
-	console.debug( state );
+	console.warn( state );
 	return(
 		<div>
-			<h1> {state.jobList} </h1>
+		<h1>PBS Jobs</h1>
+		<table>
+			<thead>
+			  <tr>
+			  <td>Name</td>
+			  <td>Id</td>
+			  <td>Memory</td>
+			  <td>Time</td>
+			  </tr>
+			</thead>
+			<tbody>
+			{state.jobList.map((job, i) => {
+				return(
+					<tr key={i}>
+					<td>{job.Job_Name}</td>
+					<td>{job.job_id}</td>
+					<td>{job.resources_used.mem}</td>
+					<td>{job.resources_used.walltime}</td>
+					</tr>
+					)})}
+			</tbody>
+
+		</table>
 
 		</div>
+		//
 		)
 }
 
