@@ -31,6 +31,16 @@ const cmds = {
 	'query_all' : 'fetch_jobs_json.sh'
 }
 
+const theme = {
+  green: '#97c475',
+  green_threshold: 80,
+  yellow: '#e5c07b',
+  yellow_threshold: 55,
+  orange: '#d09a6a',
+  orange_threshold: 30,
+  red: '#e06c75'
+}
+
 
 export const refreshFrequency = 1000*10;
 
@@ -81,24 +91,32 @@ export const updateState = (event, previousState) => {
 		}
 }
 
-const headers = {
-	'job_id': {
-		text: 'Job Id'
-	},
-	'Job_Name': {
-		text: 'Job Name'
-	},
-	'job_state': {
-		text: 'Job State'
-	},
-	'resources_used.mem': {
-		text: 'Memory Used',
-	},
-	'resources_used.walltime': {
-		text: 'Time used'
+const getMemoryColor = (level) => {
+	if (level < theme.green_threshold) return theme.green;
+	if (level < theme.yellow_threshold) return theme.yellow;
+	if (level < theme.orange_threshold) return theme.orange;
+	return theme.red;
+}
+
+const getMemoryStyle = (level) => {
+	const color = getMemoryColor(level);
+	const height = `{level}%`;
+
+	return {
+		height: height,
+		background: color
 	}
 }
 
+const getTimeStyle = (level) => {
+	const width = `{level}%`;
+	const color = getMemoryColor(level);
+	return {
+		left  : "0px",
+		right : width,
+		background : color,
+	}
+}
 
 export const render = ( state ) => {
 	console.warn( state );
@@ -121,11 +139,14 @@ export const render = ( state ) => {
 					<td>{job.Job_Name}</td>
 					<td>{job.job_id}</td>
 					<td>
+					  <div style={getMemoryStyle(job.pct.mem)}>%</div>
 					  {job.resources_used.mem}
 					  <br></br>
 					  {job.Resource_List.mem}
 					</td>
 					<td>
+						
+						<div><div style={getTimeStyle(job.pct.time)}>%</div></div>
 						{job.resources_used.walltime}
 						<br></br>
 						{job.Resource_List.walltime}
@@ -145,7 +166,7 @@ export const render = ( state ) => {
 export const className = {
   top: 10,
   left: 10,
-  width: 400,
+  width: 220,
   color: '#fff',
   backgroundColor: 'rgba(0, 0, 0, 0.6)',
   borderRadius: 5,
