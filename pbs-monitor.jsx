@@ -31,7 +31,7 @@ const cmds = {
 }
 
 
-export const refreshFrequency = 1000*30;
+export const refreshFrequency = 1000*10;
 
 
 export const command = (dispatch) => {
@@ -99,8 +99,16 @@ export const render = ( state ) => {
 					<tr key={i}>
 					<td>{job.Job_Name}</td>
 					<td>{job.job_id}</td>
-					<td>{job.resources_used.mem}</td>
-					<td>{job.resources_used.walltime}</td>
+					<td>
+					  {job.resources_used.mem}
+					  <br></br>
+					  {job.Resource_List.mem}
+					</td>
+					<td>
+						{job.resources_used.walltime}
+						<br></br>
+						{job.Resource_List.walltime}
+					</td>
 					</tr>
 					)})}
 			</tbody>
