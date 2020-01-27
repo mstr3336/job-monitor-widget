@@ -64,8 +64,6 @@ function updateJoblist(result, previousState) {
 		  	const epoch = '1970-01-01T';
 
 			job[str].mem = bytes.parse(job[str].mem);
-			job[str].mem /= 1024*1024;
-			job[str].mem = Math.round(job[str].mem);
 
 			job[str].time = new Date(epoch + job[str].walltime + 'Z');
 		});
@@ -186,9 +184,9 @@ export const render = ( state ) => {
 					   <div> </div>
 					   <div style={getMemoryStyle(job.pct.mem)}></div>
 					  </div>
-					  {job.resources_used.mem}
+					  {bytes.format(job.resources_used.mem)}
 					  <br></br>
-					  {job.Resource_List.mem}
+					  {bytes.format(job.Resource_List.mem)}
 					</td>
 					<td>
 						{TimeBar(job.pct.time)}
