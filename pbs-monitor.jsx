@@ -180,10 +180,7 @@ export const render = ( state ) => {
 					<td>{job.Job_Name}</td>
 					<td>{job.job_id}</td>
 					<td>
-					  <div>
-					   <div> </div>
-					   <div style={getMemoryStyle(job.pct.mem)}></div>
-					  </div>
+					  {MemoryBar(job.pct.mem)}
 					  {bytes.format(job.resources_used.mem)}
 					  <br></br>
 					  {bytes.format(job.Resource_List.mem)}
