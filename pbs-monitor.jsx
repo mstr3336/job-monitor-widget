@@ -100,13 +100,39 @@ const getMemoryColor = (level) => {
 
 const getMemoryStyle = (level) => {
 	const color = getMemoryColor(level);
-	const height = `{level}%`;
-
+	
 	return {
-		height: height,
-		background: color
+		background: color,
+		"white-space": "nowrap",
+		"overflow-x" : "hidden",
+		"overflow-y" : "hidden",
+		"font-size"  : "8px",
+		"width" : "12px"
 	}
 }
+
+const MemoryBar = (level) => {
+	const container_style = {
+		display : "grid",
+		"grid-template-rows" : `${100-level}% auto`,
+		"width" : "12px",
+		"height": "12px",
+		"outline-style": "solid",
+		"outline-color": className.color,
+		"outline-width": "thin"
+	}
+
+	const bar_style = getMemoryStyle(level);
+
+
+	return(
+		<div style={container_style}>
+			<div></div>
+			<div style={bar_style}>{level}%</div>
+		</div>
+		)
+}
+
 
 const getTimeStyle = (level) => {
 	const color = getMemoryColor(level);
