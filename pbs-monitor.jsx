@@ -109,13 +109,27 @@ const getMemoryStyle = (level) => {
 }
 
 const getTimeStyle = (level) => {
-	const width = `{level}%`;
 	const color = getMemoryColor(level);
 	return {
-		left  : "0px",
-		right : width,
 		background : color,
+		"text-align": "left",
+		"white-space": "nowrap"
 	}
+}
+
+const TimeBar = (job) => {
+	const container_style = {
+		display: "grid",
+		"grid-template-columns": `${job.pct.time}% auto`
+	}
+	const bar_style = getTimeStyle(job.pct.time);
+
+	return(
+		<div style={container_style}>
+			<div style={bar_style}>{job.pct.time}%</div>
+			<div></div>
+		</div>
+		)
 }
 
 export const render = ( state ) => {
@@ -139,14 +153,16 @@ export const render = ( state ) => {
 					<td>{job.Job_Name}</td>
 					<td>{job.job_id}</td>
 					<td>
-					  <div style={getMemoryStyle(job.pct.mem)}>%</div>
+					  <div>
+					   <div> </div>
+					   <div style={getMemoryStyle(job.pct.mem)}></div>
+					  </div>
 					  {job.resources_used.mem}
 					  <br></br>
 					  {job.Resource_List.mem}
 					</td>
 					<td>
-						
-						<div><div style={getTimeStyle(job.pct.time)}>%</div></div>
+						{TimeBar(job)}
 						{job.resources_used.walltime}
 						<br></br>
 						{job.Resource_List.walltime}
