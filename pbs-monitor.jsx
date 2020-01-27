@@ -66,7 +66,9 @@ function updateJoblist(result, previousState) {
 			job[str].mem = bytes.parse(job[str].mem);
 
 			job[str].time = new Date(epoch + job[str].walltime + 'Z');
-			job[str].walltime = job[str].walltime.slice(0, job[str].walltime.lastIndexOf(":"));
+			if (job[str].walltime !== "undefined") {
+				job[str].walltime = job[str].walltime.slice(0, job[str].walltime.lastIndexOf(":"));
+			}
 		});
 
 		job.pct = {};
@@ -105,8 +107,8 @@ const getMemoryStyle = (level) => {
 		"white-space": "nowrap",
 		"overflow-x" : "hidden",
 		"overflow-y" : "hidden",
-		"font-size"  : "8px",
-		"width" : "12px"
+		"font-size"  : "11px",
+		"width" : "21px"
 	}
 }
 
@@ -114,7 +116,7 @@ const MemoryBar = (level) => {
 	const container_style = {
 		display : "grid",
 		"grid-template-rows" : `${100-level}% auto`,
-		"width" : "12px",
+		"width" : "21px",
 		"height": "12px",
 		"outline-style": "solid",
 		"outline-color": className.color,
@@ -182,9 +184,9 @@ export const render = ( state ) => {
 					<td>{job.job_id}</td>
 					<td>
 					  {MemoryBar(job.pct.mem)}
-					  {bytes.format(job.resources_used.mem).replace("B","")}
+					  {bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}
 					  <br></br>
-					  {bytes.format(job.Resource_List.mem).replace("B","")}
+					  {bytes.format(job.Resource_List.mem, {decimalPlaces:0}).replace("B","")}
 					</td>
 					<td>
 						{TimeBar(job.pct.time)}
