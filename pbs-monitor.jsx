@@ -57,17 +57,25 @@ export const inititalState = {
 
 function updateJoblist(result, previousState) {
 	let data = JSON.parse(result);
+	console.debug(result);
+
+	console.debug(data);
 
 	previousState['jobList'] = data.map((job, i) => {
 		['resources_used', 'Resource_List']
 		  .forEach(str => {
 		  	const epoch = '1970-01-01T';
 
-			job[str].mem = bytes.parse(job[str].mem);
+		  	if (job[str].mem !== "undefined") {
+		  		job[str].mem = bytes.parse(job[str].mem);
+		  	}
 
-			job[str].time = new Date(epoch + job[str].walltime + 'Z');
+			
 			if (job[str].walltime !== "undefined") {
+				job[str].time = new Date(epoch + job[str].walltime + 'Z');
 				job[str].walltime = job[str].walltime.slice(0, job[str].walltime.lastIndexOf(":"));
+			} else {
+				job[str].time = new Date(epoch);
 			}
 		});
 
