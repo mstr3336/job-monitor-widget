@@ -146,7 +146,10 @@ const getTimeStyle = (level) => {
 const TimeBar = (level) => {
 	const container_style = {
 		display: "grid",
-		"grid-template-columns": `${level}% auto`
+		"grid-template-columns": `${level}% auto`,
+		"outline-style": "solid",
+		"outline-color": className.color,
+		"outline-width": "thin"
 	}
 	const bar_style = getTimeStyle(level);
 
