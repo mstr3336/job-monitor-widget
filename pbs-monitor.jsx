@@ -117,16 +117,16 @@ const getTimeStyle = (level) => {
 	}
 }
 
-const TimeBar = (job) => {
+const TimeBar = (level) => {
 	const container_style = {
 		display: "grid",
-		"grid-template-columns": `${job.pct.time}% auto`
+		"grid-template-columns": `${level}% auto`
 	}
-	const bar_style = getTimeStyle(job.pct.time);
+	const bar_style = getTimeStyle(level);
 
 	return(
 		<div style={container_style}>
-			<div style={bar_style}>{job.pct.time}%</div>
+			<div style={bar_style}>{level}%</div>
 			<div></div>
 		</div>
 		)
@@ -162,7 +162,7 @@ export const render = ( state ) => {
 					  {job.Resource_List.mem}
 					</td>
 					<td>
-						{TimeBar(job)}
+						{TimeBar(job.pct.time)}
 						{job.resources_used.walltime}
 						<br></br>
 						{job.Resource_List.walltime}
