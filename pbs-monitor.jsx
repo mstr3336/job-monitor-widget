@@ -179,7 +179,7 @@ export const render = ( state ) => {
 			<thead>
 			  <tr>
 			  <td>Name</td>
-			  <td>Id</td>
+			  <td width="50px">Id</td>
 			  <td>Memory</td>
 			  <td>Time</td>
 			  </tr>
@@ -189,7 +189,7 @@ export const render = ( state ) => {
 				return(
 					<tr key={i}>
 					<td>{job.Job_Name}</td>
-					<td>{job.job_id}</td>
+					<td width="50px">{job.job_id}</td>
 					<td>
 					  {MemoryBar(job.pct.mem)}
 					  {bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}
