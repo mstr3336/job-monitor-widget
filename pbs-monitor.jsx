@@ -189,7 +189,7 @@ export const render = ( state ) => {
 				return(
 					<tr key={i}>
 					<td>{job.Job_Name}</td>
-					<td width="50px">{job.job_id}</td>
+					<td><div style={{width: "30px", "white-space" : "nowrap", overflow: "hidden", "word-wrap": "break-word"}}>{job.job_id}</div></td>
 					<td>
 					  {MemoryBar(job.pct.mem)}
 					  {bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}
