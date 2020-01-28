@@ -170,6 +170,12 @@ const TimeBar = (level) => {
 		)
 }
 
+const IDCell = styled("div")((props) => ({
+	width: "60px", 
+	"word-wrap": "break-word"
+}))
+
+
 export const render = ( state ) => {
 	console.warn( state );
 	return(
@@ -189,7 +195,7 @@ export const render = ( state ) => {
 				return(
 					<tr key={i}>
 					<td>{job.Job_Name}</td>
-					<td><div style={{width: "30px", "white-space" : "nowrap", overflow: "hidden", "word-wrap": "break-word"}}>{job.job_id}</div></td>
+					<td><IDCell>{job.job_id}</IDCell></td>
 					<td>
 					  {MemoryBar(job.pct.mem)}
 					  {bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}
