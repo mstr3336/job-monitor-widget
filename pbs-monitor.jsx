@@ -66,12 +66,12 @@ function updateJoblist(result, previousState) {
 		  .forEach(str => {
 		  	const epoch = '1970-01-01T';
 
-		  	if (job[str].mem !== "undefined") {
+		  	if (job[str].mem !== undefined) {
 		  		job[str].mem = bytes.parse(job[str].mem);
 		  	}
 
 			
-			if (job[str].walltime !== "undefined") {
+			if (job[str].walltime !== undefined) {
 				job[str].time = new Date(epoch + job[str].walltime + 'Z');
 				job[str].walltime = job[str].walltime.slice(0, job[str].walltime.lastIndexOf(":"));
 			} else {
