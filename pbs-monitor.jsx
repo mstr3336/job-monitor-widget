@@ -16,7 +16,7 @@
  * Import the CSS function to render CSS styles.
  * @type {Function}
  */
-import { css , run, React } from 'uebersicht'
+import { css , run, React, styled } from 'uebersicht'
 //import DataTable from 'react-data-table-component';
 //import SmartDataTable from 'react-smart-data-table'
 //var bytes = require('./node_modules/bytes');
