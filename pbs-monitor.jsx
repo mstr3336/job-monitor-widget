@@ -178,7 +178,7 @@ const IDCell = styled("div")((props) => ({
 
 
 export const render = ( state ) => {
-	console.warn( state );
+	console.debug( state );
 	return(
 		<div>
 		<h1>PBS Jobs</h1>
