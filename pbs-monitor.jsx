@@ -179,7 +179,7 @@ export const render = ( state ) => {
 			<thead>
 			  <tr>
 			  <td>Name</td>
-			  <td width="50px">Id</td>
+			  <td>Id</td>
 			  <td>Memory</td>
 			  <td>Time</td>
 			  </tr>
