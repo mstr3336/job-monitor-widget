@@ -195,7 +195,7 @@ export const render = ( state ) => {
 			{state.jobList.map((job, i) => {
 				return(
 					<tr key={i}>
-					<td>{job.Job_Name}</td>
+					<td><IDCell>{job.Job_Name}</IDCell></td>
 					<td><IDCell>{job.job_id}</IDCell></td>
 					<td>
 					  {MemoryBar(job.pct.mem)}
