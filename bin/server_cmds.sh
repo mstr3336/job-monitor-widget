@@ -9,7 +9,7 @@ function get_job_ids() {
 
     # jq json-ifies the output
 
-	echo "$(qstat -wu $USER)" |& \
+	echo "$(qstat -wu $USER)" | \
 		sed -Ee '1,/[-\s]+$/ d;s/ .*//' 
 	 	 
 }
