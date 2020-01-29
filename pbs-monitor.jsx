@@ -113,10 +113,10 @@ const getMemoryStyle = (level) => {
 	
 	return {
 		background: color,
-		"white-space": "nowrap",
-		"overflow-x" : "hidden",
-		"overflow-y" : "hidden",
-		"font-size"  : "11px",
+		"whiteSpace": "nowrap",
+		"overflowX" : "hidden",
+		"overflowY" : "hidden",
+		"fontSize"  : "11px",
 		"width" : "21px"
 	}
 }
@@ -124,12 +124,12 @@ const getMemoryStyle = (level) => {
 const MemoryBar = (level) => {
 	const container_style = {
 		display : "grid",
-		"grid-template-rows" : `${100-level}% auto`,
+		"gridTemplateRows" : `${100-level}% auto`,
 		"width" : "21px",
 		"height": "12px",
-		"outline-style": "solid",
-		"outline-color": className.color,
-		"outline-width": "thin"
+		"outlineStyle": "solid",
+		"outlineColor": className.color,
+		"outlineWidth": "thin"
 	}
 
 	const bar_style = getMemoryStyle(level);
@@ -148,18 +148,18 @@ const getTimeStyle = (level) => {
 	const color = getMemoryColor(level);
 	return {
 		background : color,
-		"text-align": "left",
-		"white-space": "nowrap"
+		"textAlign": "left",
+		"whiteSpace": "nowrap"
 	}
 }
 
 const TimeBar = (level) => {
 	const container_style = {
 		display: "grid",
-		"grid-template-columns": `${level}% auto`,
-		"outline-style": "solid",
-		"outline-color": className.color,
-		"outline-width": "thin"
+		"gridTemplateColumns": `${level}% auto`,
+		"outlineStyle": "solid",
+		"outlineColor": className.color,
+		"outlineWidth": "thin"
 	}
 	const bar_style = getTimeStyle(level);
 
@@ -173,7 +173,7 @@ const TimeBar = (level) => {
 
 const IDCell = styled("div")((props) => ({
 	width: "60px", 
-	"word-wrap": "break-word"
+	"wordWrap": "break-word"
 }))
 
 
