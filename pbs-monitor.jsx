@@ -198,10 +198,12 @@ export const render = ( state ) => {
 		<div>
 		<h1>PBS Jobs</h1>
 		<table>
-			<col></col>
-			<col></col>
-			<colgroup span="3">Memory</colgroup> 
-			<colgroup span="3">Time</colgroup>
+			<colgroup>
+			  <col></col>
+			  <col></col>
+			  <col span="3"></col>
+			  <col span="3"></col>
+			</colgroup>
 			<thead>
 			  <tr>
 			  	<th scope="col">Name</th>
