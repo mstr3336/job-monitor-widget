@@ -38,7 +38,8 @@ const theme = {
   yellow_threshold: 55,
   orange: '#d09a6a',
   orange_threshold: 30,
-  red: '#e06c75'
+  red: '#e06c75',
+  small_font: "7px"
 }
 
 
@@ -172,8 +173,15 @@ const TimeBar = (level) => {
 }
 
 const IDCell = styled("div")((props) => ({
-	width: "60px", 
-	"wordWrap": "break-word"
+	width: "30px", 
+	height: "15px",
+	overflowY: "hidden",
+	"wordWrap": "break-word",
+	fontSize: theme.small_font//"0.3vw"
+}))
+
+const MemoryBarCell = styled("div")((props) => ({
+	width: "80px"
 }))
 
 
@@ -183,12 +191,26 @@ export const render = ( state ) => {
 		<div>
 		<h1>PBS Jobs</h1>
 		<table>
+			<col></col>
+			<col></col>
+			<colgroup span="3">Memory</colgroup> 
+			<colgroup span="3">Time</colgroup>
 			<thead>
 			  <tr>
-			  <td>Name</td>
-			  <td>Id</td>
-			  <td>Memory</td>
-			  <td>Time</td>
+			  	<th scope="col">Name</th>
+			  	<th scope="col">ID</th>
+			  	<th colspan="3" scope="colgroup">Memory</th>
+			  	<th colspan="3" scope="colgroup">Time</th>
+			  </tr>
+			  <tr>
+			  	<th scope="col"></th>
+			  	<th scope="col"></th>
+			  	<th scope="col">Reqd</th>
+			  	<th scope="col">Used</th>
+			  	<th scope="col">%</th>
+			  	<th scope="col">Reqd</th>
+			  	<th scope="col">Used</th>
+			  	<th scope="col">%</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -197,18 +219,12 @@ export const render = ( state ) => {
 					<tr key={i}>
 					<td><IDCell>{job.Job_Name}</IDCell></td>
 					<td><IDCell>{job.job_id}</IDCell></td>
-					<td>
-					  {MemoryBar(job.pct.mem)}
-					  {bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}
-					  <br></br>
-					  {bytes.format(job.Resource_List.mem, {decimalPlaces:0}).replace("B","")}
-					</td>
-					<td>
-						{TimeBar(job.pct.time)}
-						{job.resources_used.walltime}
-						<br></br>
-						{job.Resource_List.walltime}
-					</td>
+					<td>{bytes.format(job.Resource_List.mem, {decimalPlaces:0}).replace("B","")}</td>
+					<td>{bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}</td>
+					<td><MemoryBarCell>{MemoryBar(job.pct.mem)}</MemoryBarCell></td>
+					<td>{job.Resource_List.walltime}</td>
+					<td>{job.resources_used.walltime}</td>
+					<td>{TimeBar(job.pct.time)}</td>
 					</tr>
 					)})}
 			</tbody>
@@ -222,13 +238,13 @@ export const render = ( state ) => {
 
 
 export const className = {
-  top: 10,
+  top: 20,
   left: 10,
-  width: 220,
+  width: 300,
   color: '#fff',
   backgroundColor: 'rgba(0, 0, 0, 0.6)',
   borderRadius: 5,
-  padding: 15,
+  padding: 5,
   fontSize: 11,
   fontFamily: 'Helvetica'
 }
