@@ -206,8 +206,8 @@ export const render = ( state ) => {
 			  <tr>
 			  	<th scope="col">Name</th>
 			  	<th scope="col">ID</th>
-			  	<th colspan="3" scope="colgroup">Memory</th>
-			  	<th colspan="3" scope="colgroup">Time</th>
+			  	<th colSpan="3" scope="colgroup">Memory</th>
+			  	<th colSpan="3" scope="colgroup">Time</th>
 			  </tr>
 			  <tr>
 			  	<th scope="col"></th>
