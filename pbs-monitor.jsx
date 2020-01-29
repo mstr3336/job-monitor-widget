@@ -42,7 +42,7 @@ const theme = {
 }
 
 
-export const refreshFrequency = 1000*60;
+export const refreshFrequency = 1000*30;
 
 
 export const command = (dispatch) => {
