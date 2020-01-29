@@ -134,11 +134,18 @@ const MemoryBar = (level) => {
 	}
 
 	const bar_style = getMemoryStyle(level);
+	const top_bar_style = {
+		"whiteSpace": "nowrap",
+		"overflowX" : "hidden",
+		"overflowY" : "hidden",
+		"fontSize"  : "11px",
+		"width" : "21px"
+	}
 
 
 	return(
 		<div style={container_style}>
-			<div></div>
+			<div style={top_bar_style}>{level}%</div>
 			<div style={bar_style}>{level}%</div>
 		</div>
 		)
