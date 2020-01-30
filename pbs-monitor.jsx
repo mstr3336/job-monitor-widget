@@ -135,10 +135,6 @@ const MemoryBar = (level) => {
 
 	const bar_style = getMemoryStyle(level);
 	const top_bar_style = {
-		"whiteSpace": "nowrap",
-		"overflowX" : "hidden",
-		"overflowY" : "hidden",
-		"fontSize"  : "11px",
 		"width" : theme.mem_bar_width
 	}
 
@@ -150,8 +146,8 @@ const MemoryBar = (level) => {
 
 	return(
 		<div style={infobox_style}>
-		    <div style={{textAlign: "left", whiteSpace: "nowrap"}}>
-		    {level}%
+		    <div style={{textAlign: "left", whiteSpace: "nowrap", zIndex: 1, fontSize:"10px"}}>
+		    {level}
 		    </div>
 			<div style={container_style}>
 				<div style={top_bar_style}></div>
