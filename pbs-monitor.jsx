@@ -171,7 +171,7 @@ const getMemoryStyle = (level) => {
 	}
 }
 
-const MemoryBar = (level) => {
+const MemoryBar = (level, key) => {
 	const container_style = {
 		display : "grid",
 		"gridTemplateRows" : `${100-level}% auto`,
@@ -194,7 +194,7 @@ const MemoryBar = (level) => {
 
 
 	return(
-		<div style={infobox_style}>
+		<div key={key} style={infobox_style}>
 		    <div style={{textAlign: "left", whiteSpace: "nowrap", zIndex: 1, fontSize:"10px"}}>
 		    {level}
 		    </div>
@@ -242,12 +242,16 @@ const IDCell = styled("div")((props) => ({
 	fontSize: theme.small_font//"0.3vw"
 }))
 
+const TopCell = styled("div")((props) => ({
+	display: "grid"
+}))
+
 const MemoryBarCell = styled("div")((props) => ({
 	width: "80px",
 	display: "grid",
 	gridTemplateColumns: "auto auto auto auto auto",
 	gridGap: "5px",
-	justifyContent: "center"
+	justifyContent: "flex-start"
 }))
 
 function isEmpty(obj) {
@@ -257,8 +261,8 @@ function isEmpty(obj) {
 export const renderSubjobMemory = ( job ) => {
 	return(
 		<MemoryBarCell>
-			{Object.keys(job.subjobs).map((key) => {
-				return(MemoryBar(job.subjobs[key].pct.mem));
+			{Object.keys(job.subjobs).map((key, i) => {
+				return(MemoryBar(job.subjobs[key].pct.mem, i));
 			})}
 		</MemoryBarCell>
 		)
@@ -306,8 +310,8 @@ export const render = ( state ) => {
 			{Object.keys(state.jobDict).map((key, i) => {
 				var job = state.jobDict[key];
 				return(
-					<tr key={i}>
-					<td><IDCell>{job.Job_Name}</IDCell></td>
+					<tr key={i} style={{borderBottom: "1px solid white"}}>
+					<td><TopCell><IDCell>{job.Job_Name}</IDCell></TopCell></td>
 					<td><IDCell>{job.job_id}</IDCell></td>
 					<td>{bytes.format(job.Resource_List.mem, {decimalPlaces:0}).replace("B","")}</td>
 					<td>{bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}</td>
