@@ -39,7 +39,8 @@ const theme = {
   orange: '#d09a6a',
   orange_threshold: 30,
   red: '#e06c75',
-  small_font: "7px"
+  small_font: "7px",
+  mem_bar_width: "15px"
 }
 
 
@@ -117,11 +118,7 @@ const getMemoryStyle = (level) => {
 	
 	return {
 		background: color,
-		"whiteSpace": "nowrap",
-		"overflowX" : "hidden",
-		"overflowY" : "hidden",
-		"fontSize"  : "11px",
-		"width" : "21px"
+		"width" : theme.mem_bar_width
 	}
 }
 
@@ -129,7 +126,7 @@ const MemoryBar = (level) => {
 	const container_style = {
 		display : "grid",
 		"gridTemplateRows" : `${100-level}% auto`,
-		"width" : "21px",
+		"width" : theme.mem_bar_width,
 		"height": "12px",
 		"outlineStyle": "solid",
 		"outlineColor": className.color,
@@ -142,14 +139,24 @@ const MemoryBar = (level) => {
 		"overflowX" : "hidden",
 		"overflowY" : "hidden",
 		"fontSize"  : "11px",
-		"width" : "21px"
+		"width" : theme.mem_bar_width
+	}
+
+	const infobox_style = {
+		display: "grid",
+		gridTemplateColumns: "0px auto"
 	}
 
 
 	return(
-		<div style={container_style}>
-			<div style={top_bar_style}>{level}%</div>
-			<div style={bar_style}>{level}%</div>
+		<div style={infobox_style}>
+		    <div style={{textAlign: "left", whiteSpace: "nowrap"}}>
+		    {level}%
+		    </div>
+			<div style={container_style}>
+				<div style={top_bar_style}></div>
+				<div style={bar_style}></div>
+			</div>
 		</div>
 		)
 }
