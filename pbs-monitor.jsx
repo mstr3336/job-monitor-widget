@@ -120,9 +120,6 @@ function buildJobDict(jobList) {
 		var matches = job.job_id.match(subjob_pat);
 		if (matches == undefined) return;
 
-		console.debug({msg: "Matches found", matches, groups: matches.groups});
-		console.debug(matches.groups);
-
 		var key = matches.groups.number + "[]" + matches.groups.suffix;
 		var idx = matches.groups.array_index;
 
