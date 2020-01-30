@@ -58,9 +58,12 @@ export const inititalState = {
 
 function updateJoblist(result, previousState) {
 	let data = JSON.parse(result);
-	console.debug(result);
+	//console.debug(result);
 
-	console.debug(data);
+	console.debug({
+		msg: "Job List Fetched",
+		dttm: new Date(), 
+		payload: data});
 
 	previousState['jobList'] = data.map((job, i) => {
 		['resources_used', 'Resource_List']
@@ -193,7 +196,13 @@ const MemoryBarCell = styled("div")((props) => ({
 
 
 export const render = ( state ) => {
-	console.debug( state );
+	console.debug({
+		msg: "Rendering state",
+		dttm: new Date(),
+		payload: state
+	});
+
+
 	return(
 		<div>
 		<h1>PBS Jobs</h1>
