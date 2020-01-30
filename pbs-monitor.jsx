@@ -206,6 +206,7 @@ export const render = ( state ) => {
 	return(
 		<div>
 		<h1>PBS Jobs</h1>
+		<p style={{fontSize: "80%"}}>Last refreshed {new Date().toString()}</p>
 		<table>
 			<colgroup>
 			  <col></col>
@@ -248,7 +249,6 @@ export const render = ( state ) => {
 			</tbody>
 
 		</table>
-
 		</div>
 		//
 		)
