@@ -40,7 +40,7 @@ const theme = {
   orange_threshold: 30,
   red: '#e06c75',
   small_font: "7px",
-  mem_bar_width: "15px"
+  mem_bar_width: "13px"
 }
 
 
@@ -54,19 +54,11 @@ export const command = (dispatch) => {
 }
 
 export const inititalState = { 
-	jobList : []
+	jobList : [],
+	jobDict : {}
 };
 
-function updateJoblist(result, previousState) {
-	let data = JSON.parse(result);
-	//console.debug(result);
-
-	console.debug({
-		msg: "Job List Fetched",
-		dttm: new Date(), 
-		payload: data});
-
-	previousState['jobList'] = data.map((job, i) => {
+function processJob(job, index) {
 		['resources_used', 'Resource_List']
 		  .forEach(str => {
 		  	const epoch = '1970-01-01T';
@@ -93,7 +85,67 @@ function updateJoblist(result, previousState) {
 
 
 		return job;
+	}
+
+function buildJobDict(jobList) {
+	var out = {};
+
+	// Matches 1234[5] but not 12345 or 1234[]
+	const scalar_pat = RegExp('\\d+\\[\\\d+\]');
+
+	// Only matches if brackets have a number
+	const subjob_pat = RegExp('(?<number>\\d+)\\[(?<array_index>\\d+)\\](?<suffix>.*)');
+
+
+
+	// Matches number inside brackets
+	//const idx_strip  = RegExp('(?<=\[)' + '\d+' + '(?=\])');
+
+
+
+	jobList.forEach((job) => {
+		if (!scalar_pat.test(job.job_id)) {
+			out[job.job_id] = job;
+			out[job.job_id].subjobs = {};
+		}
 	});
+
+	jobList.forEach((job) => {
+		
+		if (out.hasOwnProperty(job.job_id)) {
+			out[job.job_id].subjobs["0"] = job;
+			return;
+		}
+
+		var matches = job.job_id.match(subjob_pat);
+		if (matches == undefined) return;
+
+		console.debug({msg: "Matches found", matches, groups: matches.groups});
+		console.debug(matches.groups);
+
+		var key = matches.groups.number + "[]" + matches.groups.suffix;
+		var idx = matches.groups.array_index;
+
+		if (out.hasOwnProperty(key)) {
+			out[key].subjobs[idx] = job;
+		}
+
+	});
+	return out;
+}
+
+function updateJoblist(result, previousState) {
+	let data = JSON.parse(result);
+	//console.debug(result);
+
+	console.debug({
+		msg: "Job List Fetched",
+		dttm: new Date(), 
+		payload: data});
+
+	previousState['jobList'] = data.map(processJob)
+
+	previousState['jobDict'] = buildJobDict(previousState['jobList']);
 
 	return previousState;
 }
@@ -194,8 +246,26 @@ const IDCell = styled("div")((props) => ({
 }))
 
 const MemoryBarCell = styled("div")((props) => ({
-	width: "80px"
+	width: "80px",
+	display: "grid",
+	gridTemplateColumns: "auto auto auto auto auto",
+	gridGap: "5px",
+	justifyContent: "center"
 }))
+
+function isEmpty(obj) {
+  return Object.keys(obj).length === 0;
+}
+
+export const renderSubjobMemory = ( job ) => {
+	return(
+		<MemoryBarCell>
+			{Object.keys(job.subjobs).map((key) => {
+				return(MemoryBar(job.subjobs[key].pct.mem));
+			})}
+		</MemoryBarCell>
+		)
+}
 
 
 export const render = ( state ) => {
@@ -236,14 +306,15 @@ export const render = ( state ) => {
 			  </tr>
 			</thead>
 			<tbody>
-			{state.jobList.map((job, i) => {
+			{Object.keys(state.jobDict).map((key, i) => {
+				var job = state.jobDict[key];
 				return(
 					<tr key={i}>
 					<td><IDCell>{job.Job_Name}</IDCell></td>
 					<td><IDCell>{job.job_id}</IDCell></td>
 					<td>{bytes.format(job.Resource_List.mem, {decimalPlaces:0}).replace("B","")}</td>
 					<td>{bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}</td>
-					<td><MemoryBarCell>{MemoryBar(job.pct.mem)}</MemoryBarCell></td>
+					<td>{renderSubjobMemory(job)}</td>
 					<td>{job.Resource_List.walltime}</td>
 					<td>{job.resources_used.walltime}</td>
 					<td>{TimeBar(job.pct.time)}</td>
