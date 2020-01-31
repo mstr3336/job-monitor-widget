@@ -178,6 +178,7 @@ const getMemoryStyle = (level) => {
 
 const MemoryBar = (job) => {
 	const level = job.pct.mem;
+	var display = level;
 	const key = job.array_index;
 
 	const container_style = {
@@ -202,12 +203,22 @@ const MemoryBar = (job) => {
 		gridTemplateRows: "10px auto"
 	}
 
+	switch (job.job_state) {
+		case "Q": 
+		case "X":
+			display = job.job_state;
+			break;
+		default:
+			display = level;
+			break;
+	}
+
 
 	return(
 		<div key={key} style={infobox_style}>
 			<div style={{fontSize: theme.subjob_info_font, paddingTop: "2px", paddingRight:"2px"}}>{key}</div>
 			<div style={container_style}>
-				<div style={top_bar_style}>{level}</div>
+				<div style={top_bar_style}>{display}</div>
 				<div style={bar_style}></div>
 			</div>
 		</div>
@@ -275,7 +286,7 @@ export const renderSubjobMemory = ( job ) => {
 	return(
 		<MemoryBarCell>
 			{Object.keys(job.subjobs).map((key, i) => {
-				return(MemoryBar(job));
+				return(MemoryBar(job.subjobs[key]));
 			})}
 		</MemoryBarCell>
 		)
