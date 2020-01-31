@@ -1,6 +1,35 @@
 # Use python 3.7.2
 
-import re, json, subprocess
+import re, json, subprocess, sys
+
+def get_job_list(username):
+	cmd = ["qselect", "-u", username]
+	px = subprocess.run(
+			cmd,
+			capture_output = True,
+			text = True
+		)
+
+	job_ids = px.stdout
+	if job_ids:
+		job_ids = job_ids.split("\n")
+	else:
+		job_ids = []
+
+	return job_ids
+
+def get_listed_jobs_raw(job_ids):
+	if not job_ids: return ""
+
+	cmd = ["qstat", "-ft"] + job_ids
+	px = subprocess.run(
+			cmd, 
+			capture_output = True,
+			text = True)
+	
+	raw_output = px.stdout
+	return raw_output
+
 
 def get_raw_jobs():
 	cmd = ["/bin/bash", "./get_all_jobs_raw.sh"]
@@ -65,8 +94,9 @@ def get_sublist(raw_job, sublist_name, useful_keys=("mem","walltime")):
 	
 	return out
 
-def get_all_job_stats():
-	jobs = get_raw_jobs()
+def get_all_job_stats(user):
+	job_ids = get_job_list(user)
+	jobs = get_listed_jobs_raw(user)
 	jobs = split_raw_jobs(jobs)
 
 	for i, job in enumerate(jobs):
@@ -77,7 +107,9 @@ def get_all_job_stats():
 	return jobs
 
 if __name__ == "__main__":
-	jobs = get_all_job_stats()
+	user = sys.argv[1]
+
+	jobs = get_all_job_stats(user)
 	print(json.dumps(jobs))
 
 
