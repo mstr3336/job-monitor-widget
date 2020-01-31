@@ -194,13 +194,13 @@ const MemoryBar = (level, key) => {
 
 	const infobox_style = {
 		display: "grid",
-		gridTemplateColumns: "8px 0px auto"
+		gridTemplateColumns: "10px 0px auto"
 	}
 
 
 	return(
 		<div key={key} style={infobox_style}>
-			<div style={{fontSize: theme.subjob_info_font, paddingTop: "2px"}}>{key}</div>
+			<div style={{fontSize: theme.subjob_info_font, paddingTop: "2px", paddingRight:"2px"}}>{key}</div>
 		    <div style={{textAlign: "left", whiteSpace: "nowrap", zIndex: 1, fontSize:"10px"}}>
 		    {level}
 		    </div>
@@ -253,11 +253,15 @@ const TopCell = styled("div")((props) => ({
 }))
 
 const MemoryBarCell = styled("div")((props) => ({
-	width: "80px",
+	width: "110px",
 	display: "grid",
-	gridTemplateColumns: "auto auto auto auto auto",
+	gridTemplateColumns: "auto auto auto auto",
 	gridGap: "5px",
-	justifyContent: "flex-start"
+	justifyContent: "flex-start",
+	outlineStyle: "solid",
+	outlineWidth: "thin",
+	paddingTop: "5px",
+	paddingBottom: "5px"
 }))
 
 function isEmpty(obj) {
@@ -340,7 +344,7 @@ export const render = ( state ) => {
 export const className = {
   top: 20,
   left: 10,
-  width: 300,
+  width: 330,
   color: '#fff',
   backgroundColor: 'rgba(0, 0, 0, 0.6)',
   borderRadius: 5,
