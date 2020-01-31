@@ -254,7 +254,7 @@ const TopCell = styled("div")((props) => ({
 const MemoryBarCell = styled("div")((props) => ({
 	width: "110px",
 	display: "grid",
-	gridTemplateColumns: "auto auto auto auto",
+	gridTemplateColumns: "auto auto auto auto auto auto",
 	gridGap: "5px",
 	justifyContent: "flex-start",
 	//outlineStyle: "solid",
