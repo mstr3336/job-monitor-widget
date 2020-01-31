@@ -12,10 +12,10 @@ def get_job_list(username):
 
 	job_ids = px.stdout
 	if job_ids:
-		job_ids = job_ids.split("\n")
+		job_ids = job_ids.split()
 	else:
 		job_ids = []
-
+	
 	return job_ids
 
 def get_listed_jobs_raw(job_ids):
