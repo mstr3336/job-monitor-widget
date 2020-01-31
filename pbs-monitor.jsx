@@ -206,6 +206,7 @@ const MemoryBar = (job) => {
 	switch (job.job_state) {
 		case "Q": 
 		case "X":
+		case "B":
 			display = job.job_state;
 			break;
 		default:
