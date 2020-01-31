@@ -176,7 +176,10 @@ const getMemoryStyle = (level) => {
 	}
 }
 
-const MemoryBar = (level, key) => {
+const MemoryBar = (job) => {
+	const level = job.pct.mem;
+	const key = job.array_index;
+
 	const container_style = {
 		display : "grid",
 		"gridTemplateRows" : `${100-level}% auto`,
@@ -272,8 +275,7 @@ export const renderSubjobMemory = ( job ) => {
 	return(
 		<MemoryBarCell>
 			{Object.keys(job.subjobs).map((key, i) => {
-				const idx = job.subjobs[key].array_index;
-				return(MemoryBar(job.subjobs[key].pct.mem, idx));
+				return(MemoryBar(job));
 			})}
 		</MemoryBarCell>
 		)
