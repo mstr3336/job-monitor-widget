@@ -258,10 +258,11 @@ const MemoryBarCell = styled("div")((props) => ({
 	gridTemplateColumns: "auto auto auto auto",
 	gridGap: "5px",
 	justifyContent: "flex-start",
-	outlineStyle: "solid",
-	outlineWidth: "thin",
-	paddingTop: "5px",
-	paddingBottom: "5px"
+	//outlineStyle: "solid",
+	//outlineWidth: "thin",
+	borderTop: "thin solid",
+	paddingTop: "5px"
+	//paddingBottom: "5px"
 }))
 
 function isEmpty(obj) {
