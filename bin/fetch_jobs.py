@@ -96,7 +96,7 @@ def get_sublist(raw_job, sublist_name, useful_keys=("mem","walltime")):
 
 def get_all_job_stats(user):
 	job_ids = get_job_list(user)
-	jobs = get_listed_jobs_raw(user)
+	jobs = get_listed_jobs_raw(job_ids)
 	jobs = split_raw_jobs(jobs)
 
 	for i, job in enumerate(jobs):
