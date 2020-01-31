@@ -200,7 +200,7 @@ const MemoryBar = (level, key) => {
 
 	return(
 		<div key={key} style={infobox_style}>
-			<div style={{fontSize: theme.subjob_info_font}}>{key}</div>
+			<div style={{fontSize: theme.subjob_info_font, paddingTop: "2px"}}>{key}</div>
 		    <div style={{textAlign: "left", whiteSpace: "nowrap", zIndex: 1, fontSize:"10px"}}>
 		    {level}
 		    </div>
