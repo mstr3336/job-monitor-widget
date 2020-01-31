@@ -24,6 +24,7 @@ import bytes from 'bytes'
 
 const info = {
 	'username' 	: 'mstr3336',
+	'job_owner' : 'mstr3336',
 	'server'	: 'hpc.sydney.edu.au'
 }
 
@@ -49,7 +50,7 @@ export const refreshFrequency = 1000*30;
 
 
 export const command = (dispatch) => {
-	run('ssh ' + info.username + '@' + info.server + ' ' + cmds.query_all)
+	run('ssh ' + info.username + '@' + info.server + ' ' + cmds.query_all + ' ' + info.job_owner)
 		.then((output) => dispatch({ type: 'JOBS_FETCHED', output}));
 
 }
