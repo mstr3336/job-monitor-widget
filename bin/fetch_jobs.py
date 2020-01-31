@@ -30,17 +30,6 @@ def get_listed_jobs_raw(job_ids):
 	raw_output = px.stdout
 	return raw_output
 
-
-def get_raw_jobs():
-	cmd = ["/bin/bash", "./get_all_jobs_raw.sh"]
-	px = subprocess.run(
-			cmd, 
-			capture_output = True,
-			text = True)
-	
-	raw_output = px.stdout
-	return raw_output
-
 def split_raw_jobs(raw_job_stats):
 	pat = re.compile(r"Job Id:")
 	
