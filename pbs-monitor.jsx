@@ -39,7 +39,7 @@ const theme = {
   orange: '#d09a6a',
   orange_threshold: 30,
   red: '#e06c75',
-  small_font: "7px",
+  small_font: "8px",
   subjob_info_font: "8px",
   mem_bar_width: "13px"
 }
@@ -242,7 +242,7 @@ const TimeBar = (level) => {
 
 const IDCell = styled("div")((props) => ({
 	width: "30px", 
-	height: "15px",
+	//height: "15px",
 	overflowY: "hidden",
 	"wordWrap": "break-word",
 	fontSize: theme.small_font//"0.3vw"
