@@ -189,23 +189,22 @@ const MemoryBar = (level, key) => {
 
 	const bar_style = getMemoryStyle(level);
 	const top_bar_style = {
-		"width" : theme.mem_bar_width
+		"width" : theme.mem_bar_width,
+		whiteSpace: "nowrap", 
+		zIndex: 1
 	}
 
 	const infobox_style = {
 		display: "grid",
-		gridTemplateColumns: "10px 0px auto"
+		gridTemplateRows: "10px auto"
 	}
 
 
 	return(
 		<div key={key} style={infobox_style}>
 			<div style={{fontSize: theme.subjob_info_font, paddingTop: "2px", paddingRight:"2px"}}>{key}</div>
-		    <div style={{textAlign: "left", whiteSpace: "nowrap", zIndex: 1, fontSize:"10px"}}>
-		    {level}
-		    </div>
 			<div style={container_style}>
-				<div style={top_bar_style}></div>
+				<div style={top_bar_style}>{level}</div>
 				<div style={bar_style}></div>
 			</div>
 		</div>
@@ -336,6 +335,7 @@ export const render = ( state ) => {
 			</tbody>
 
 		</table>
+
 		</div>
 		//
 		)
