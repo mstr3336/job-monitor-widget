@@ -40,6 +40,7 @@ const theme = {
   orange_threshold: 30,
   red: '#e06c75',
   small_font: "7px",
+  subjob_info_font: "8px",
   mem_bar_width: "13px"
 }
 
@@ -111,9 +112,11 @@ function buildJobDict(jobList) {
 	});
 
 	jobList.forEach((job) => {
-		
+		var idx = "0";
+
 		if (out.hasOwnProperty(job.job_id)) {
-			out[job.job_id].subjobs["0"] = job;
+			job.array_index = idx;
+			out[job.job_id].subjobs[idx] = job;
 			return;
 		}
 
@@ -121,7 +124,9 @@ function buildJobDict(jobList) {
 		if (matches == undefined) return;
 
 		var key = matches.groups.number + "[]" + matches.groups.suffix;
-		var idx = matches.groups.array_index;
+		idx = matches.groups.array_index;
+
+		if (!job.hasOwnProperty("array_index")) job.array_index = idx;
 
 		if (out.hasOwnProperty(key)) {
 			out[key].subjobs[idx] = job;
@@ -189,12 +194,13 @@ const MemoryBar = (level, key) => {
 
 	const infobox_style = {
 		display: "grid",
-		gridTemplateColumns: "0px auto"
+		gridTemplateColumns: "8px 0px auto"
 	}
 
 
 	return(
 		<div key={key} style={infobox_style}>
+			<div style={{fontSize: theme.subjob_info_font}}>{key}</div>
 		    <div style={{textAlign: "left", whiteSpace: "nowrap", zIndex: 1, fontSize:"10px"}}>
 		    {level}
 		    </div>
@@ -262,7 +268,8 @@ export const renderSubjobMemory = ( job ) => {
 	return(
 		<MemoryBarCell>
 			{Object.keys(job.subjobs).map((key, i) => {
-				return(MemoryBar(job.subjobs[key].pct.mem, i));
+				const idx = job.subjobs[key].array_index;
+				return(MemoryBar(job.subjobs[key].pct.mem, idx));
 			})}
 		</MemoryBarCell>
 		)
