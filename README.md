@@ -94,5 +94,5 @@ Change 'server' to whatever the address of your hpc login server is.
 This is a handy thing to do to save time when ssh-ing from your local PC to
 a server you use often in any case. 
 
-Follow any guide on the subject, such as [this one]](https://www.linode.com/docs/security/authentication/use-public-key-authentication-with-ssh/) to set this up.
+Follow any guide on the subject, such as [this one](https://www.linode.com/docs/security/authentication/use-public-key-authentication-with-ssh/) to set this up.
 
