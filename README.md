@@ -68,6 +68,11 @@ Change the line containing `module load python/3.7.2` to whatever version of pyt
 
 If this is not possible on your system, but your system does support singularity containers, you may be able to use a singularity image to run the server-side commands.
 
+If enough people ask really nicely, I can probably provide a definition file,
+though you will need to build your own image as per your HPC system's 
+documentation, as you will want to match the version of singularity you build 
+with to the version your HPC provides.
+
 ### Installing the client-side widget
 
 Extract `PBSJobMonitor.widget.zip` into `your-uberischt-widgets-dir/PBSJobMonitor/`. 
