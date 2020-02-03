@@ -1,5 +1,5 @@
 {
-  "name" : "PBS Job Monitor Widget",
+  "name" : "PBS Job Monitor",
   "description" : "Monitor your PBS job status's at a glance",
   "author": "Matthew Mark Strasiotto",
   "email": "mstr3336@uni.sydney.edu.au"
