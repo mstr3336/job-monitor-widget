@@ -1,0 +1,6 @@
+{
+  "name" : "PBS Job Monitor Widget",
+  "description" : "Monitor your PBS job status's at a glance",
+  "author": "Matthew Mark Strasiotto",
+  "email": "mstr3336@uni.sydney.edu.au"
+}
