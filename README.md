@@ -1,62 +1,98 @@
-# job-monitor-widget
+# PBS Job Monitor Widget
 
+This widget allows you to monitor the status of HPC jobs submitted on PBS 
+systems from your desktop, at a glance, without having to fiddle with `qstat`,
+and reading through full job displays to understand what's happening. 
 
-Extract job_ids from `qstat -wu $USER`:
+![Full Size Screenshot](screenshot_full.png)
 
+__This has been tested on PBS Pro 13 only.__
 
-```bash
-sed -Ee '1,/[-\s]+$/ d;s/ .*//' $(qstat -wu $USER)
-```
+In order to make it compatible with other PBS Releases (Including those that
+natively support job outputs in JSON formatting), the server-side commands may
+need to be adapted to ensure that the output matches the API expected by the client.
 
-Or:
+It is possible that the `qstat -f` API has remained stable since PBSPro 13, but
+I can't say for sure.
 
-```bash
-sed -Ee '1,/[-\s]+$/ d;s/ .*//' ./tests/qstat_wu.output
-```
+Additionally, the environment modules provided by your HPC system may vary, and 
+the server-side scripts expect python >= 3.7 in order to function correctly. 
 
+## Installation
 
-Parse these into json (Requires jq loaded on server, consider loading with module load jq if avail)
+Installation takes 3 steps for this widget, the first is to install the server-side commands (Found in `./bin`). 
 
-```bash
-sed -Ee '1,/[-\s]+$/ d;s/ .*//' tests/qstat_wu.output |& jq -nR '[inputs | select(length>0)]' 
+The next step is to install the contents of `PBSJobMonitor.widget.zip` to your Uberischt widgets directory.
 
-```
+Finally, you should ensure that you have an ssh public/private key pair between
+your local machine and your hpc login, so that you are not prompted for a password when you ssh in.
 
-```bash
-[
-  "3963231[].pbsserver",
-  "3963232.pbsserver",
-  "3963253[].pbsserver",
-  "3963254.pbsserver",
-  "3984779[].pbsserver",
-  "3984780.pbsserver",
-  "3984813[].pbsserver",
-  "3984814.pbsserver",
-  "3984889[].pbsserver",
-  "3984890.pbsserver",
-  "3985089[].pbsserver",
-  "3985090.pbsserver",
-  "3988465.pbsserver"
-]
+### Installing server side commands
 
-```
+To do this, from an SSH session in your hpc, clone this repo to somewhere in your
+HPC's home folder (Anywhere is fine, as long as you can add it to path).
 
+For example:
 
-Getting values from a single `qstat -f job_id` call:
+#### Cloning the repo
 
 ```bash
-cat tests/qstat_f_batch_id_elem.out |& \
-  jq -R 'match("(?<list_type>Resource_List)\\.(?<resource_type>\\S*)\\s*=\\s*(?<resource_val>.*)", "ig")'
+cd ~
 
+git clone https://github.com/mstr3336/job-monitor-widget.git
 ```
 
+#### Adding the server-side commands to your PATH
 
+Now you need to add the contents of `./bin` to your path. 
+
+Do this in your `.bashrc`. (Assuming you cloned the repo to 
+`~/job-monitor-widget`)
+
+Add the following line:
 
 ```bash
-
-cat tests/qstat_f_batch_id_elem.out |& jq -R 'match("(?<list_type>Resource_List|resources_used)\\.(?<resource_type>\\S*)\\s*=\\s*(?<resource_val>.*)", "ig") |\
- {(.captures | .[] | select(.name == "list_type").string) : \
-   {(.captures | .[] | select(.name == "resource_type").string) : \
-       .captures | .[] | select(.name == "resource_val").string}}' 
-
+export PATH="${PATH}:~/job-monitor-widget/bin"
 ```
+
+#### (Optional) Ensuring your system can run the commands
+
+HPC systems vary, and my script expects that yours will allow loading of 
+environment modules using `module load`. 
+
+Additionally, it expects that `python/3.7.2` is an available module for your system.
+
+If your system does not have `python 3.7.2`, any version of python >= 3.7 will do.
+
+Change the line containing `module load python/3.7.2` to whatever version of python >= 3.7 your system supports. 
+
+If this is not possible on your system, but your system does support singularity containers, you may be able to use a singularity image to run the server-side commands.
+
+### Installing the client-side widget
+
+Extract `PBSJobMonitor.widget.zip` into `your-uberischt-widgets-dir/PBSJobMonitor/`. 
+
+You will need to change some parameters to match your username and server.
+
+Modify the following in `pbs-monitor.jsx` :
+
+```js
+const info = {
+  'username'  : 'mstr3336',
+  'job_owner' : 'mstr3336',
+  'server'  : 'hpc.sydney.edu.au'
+}
+```
+Change 'username' from 'mstr3336' to whatever your HPC login account is. 
+Change 'job_owner' to the account name of the user you want to monitor. 
+This will likely be the same value you set for 'username'.
+
+Change 'server' to whatever the address of your hpc login server is.
+
+### Setup Public Key Auth between your local computer and the host
+
+This is a handy thing to do to save time when ssh-ing from your local PC to
+a server you use often in any case. 
+
+Follow any guide on the subject, such as [this one](https://www.linode.com/docs/security/authentication/use-public-key-authentication-with-ssh/) to set this up.
+
