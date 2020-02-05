@@ -289,12 +289,6 @@ export const renderSubjobMemory = ( job ) => {
 	return(
 		<MemoryBarCell>
 			{Object.keys(job.subjobs).map((key, i) => {
-				console.debug({
-					msg: "Rendering subjob",
-					job_id: job.job_id,
-					key,
-					i
-				});
 				return(MemoryBar(job.subjobs[key]));
 			})}
 		</MemoryBarCell>
