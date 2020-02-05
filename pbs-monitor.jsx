@@ -50,6 +50,7 @@ export const refreshFrequency = 1000*30;
 
 
 export const command = (dispatch) => {
+	console.debug("Issuing Command");
 	run('ssh ' + info.username + '@' + info.server + ' ' + cmds.query_all + ' ' + info.job_owner)
 		.then((output) => dispatch({ type: 'JOBS_FETCHED', output}));
 
@@ -154,7 +155,7 @@ function updateJoblist(result, previousState) {
 }
 
 export const updateState = (event, previousState) => {
-		
+		console.debug(event);
 		switch(event.type) {
 			case 'JOBS_FETCHED' : return updateJoblist(event.output, previousState);
 			default : return previousState;
@@ -288,12 +289,39 @@ export const renderSubjobMemory = ( job ) => {
 	return(
 		<MemoryBarCell>
 			{Object.keys(job.subjobs).map((key, i) => {
+				console.debug({
+					msg: "Rendering subjob",
+					job_id: job.job_id,
+					key,
+					i
+				});
 				return(MemoryBar(job.subjobs[key]));
 			})}
 		</MemoryBarCell>
 		)
 }
 
+export const renderJobRow = (job, i) => {
+	console.debug({
+		msg: "Rendering job",
+		payload: {
+			job,
+			i
+		}
+	});
+	return(
+		<tr key={i} style={{borderBottom: "1px solid white"}}>
+		<td><TopCell><IDCell>{job.Job_Name}</IDCell></TopCell></td>
+		<td><IDCell>{job.job_id}</IDCell></td>
+		<td>{bytes.format(job.Resource_List.mem, {decimalPlaces:0}).replace("B","")}</td>
+		<td>{bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}</td>
+		<td>{renderSubjobMemory(job)}</td>
+		<td>{job.Resource_List.walltime}</td>
+		<td>{job.resources_used.walltime}</td>
+		<td>{TimeBar(job.pct.time)}</td>
+		</tr>
+		)
+}
 
 export const render = ( state ) => {
 	console.debug({
@@ -335,18 +363,9 @@ export const render = ( state ) => {
 			<tbody>
 			{Object.keys(state.jobDict).map((key, i) => {
 				var job = state.jobDict[key];
-				return(
-					<tr key={i} style={{borderBottom: "1px solid white"}}>
-					<td><TopCell><IDCell>{job.Job_Name}</IDCell></TopCell></td>
-					<td><IDCell>{job.job_id}</IDCell></td>
-					<td>{bytes.format(job.Resource_List.mem, {decimalPlaces:0}).replace("B","")}</td>
-					<td>{bytes.format(job.resources_used.mem, {decimalPlaces:0}).replace("B","")}</td>
-					<td>{renderSubjobMemory(job)}</td>
-					<td>{job.Resource_List.walltime}</td>
-					<td>{job.resources_used.walltime}</td>
-					<td>{TimeBar(job.pct.time)}</td>
-					</tr>
-					)})}
+				return(renderJobRow(job, i))
+
+			})}
 			</tbody>
 
 		</table>
