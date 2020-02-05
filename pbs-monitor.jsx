@@ -50,7 +50,7 @@ export const refreshFrequency = 1000*30;
 
 
 export const command = (dispatch) => {
-	console.debug("Issuing Command");
+	console.debug({msg: "Issuing Command"});
 	run('ssh ' + info.username + '@' + info.server + ' ' + cmds.query_all + ' ' + info.job_owner)
 		.then((output) => dispatch({ type: 'JOBS_FETCHED', output}));
 
